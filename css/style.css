@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Lora');
+
+.container-product-logo {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  border-bottom: 1.25px solid #c6c6c6;
+}
+
+.container-product-header {
+  /* Positioning */
+  padding-left: 16px;
+  padding-right: 89px;
+  padding-top: 26px;
+  padding-bottom: 24px;
+  /* Box-model */
+  display: flex;
+  justify-content: center;
+  /* Typography */
+  font-family: 'Lora', serif;
+  font-size: 14px;
+  color: #111111;
+}
+
+.container-product-images {
+  display: flex;
+  margin-left: 30rem;
+}
