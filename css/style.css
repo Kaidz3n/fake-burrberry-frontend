@@ -12,15 +12,15 @@ header {
 }
 
 .product-header {
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   margin-left: 1rem;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 400;
 }
 
 .container-product-images {
   display: flex;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   overflow-x: scroll;
 }
 
@@ -33,9 +33,9 @@ header {
 .product-price {
   margin-left: 1rem;
   margin-top: 1.5rem;
-  line-height: 21px;
+  line-height: 19px;
   font-family: Raleway;
-  font-size: 18px;
+  font-size: 16px;
   color: #111111;
 }
 
@@ -94,7 +94,7 @@ header {
 }
 
 .product-description-button-size {
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   margin-left: 1rem;
   margin-right: 1rem;
   line-height: 2rem;
@@ -132,7 +132,45 @@ header {
 }
 
 .product-description-end {
-  margin-top: 3.125rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  border: 1px solid #c6c6c6;
+}
+
+.product-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.product-info-title-button {
+  margin-left: 0.5rem;
+}
+
+.product-info-title {
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  color: #171717;
+}
+
+.product-info-arrow {
+  margin-right: 1rem;
+}
+
+.product-info-text {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 1rem;
+  font-family: Lora;
+  font-size: 14px;
+  line-height: 1.71;
+  color: #171717;
+}
+
+.product-info-end {
+  margin-top: 2rem;
   margin-bottom: 1rem;
   border: 1px solid #c6c6c6;
 }
