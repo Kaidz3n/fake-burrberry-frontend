@@ -1,3 +1,7 @@
+header {
+  border-bottom: solid 1px #c6c6c6;
+}
+
 hr {
   margin: 0;
 
@@ -58,7 +62,7 @@ hr {
   font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-size: 1rem;
-  line-height: 19px;
+  line-height: 1.1875rem;
   color: #111;
 }
 
@@ -66,7 +70,7 @@ hr {
   margin: 0;
 
   font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 12px;
+  font-size: .75rem;
   line-height: 1rem;
   color: #171717;
 }
@@ -133,8 +137,8 @@ hr {
   padding-bottom: 1rem;
 
   font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 12px;
-  line-height: 14px;
+  font-size: .75rem;
+  line-height: .875rem;
   text-align: center;
   color: #fff;
 
@@ -149,8 +153,8 @@ hr {
   padding-bottom: 1rem;
 
   font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 12px;
-  line-height: 14px;
+  font-size: .75rem;
+  line-height: .875rem;
   text-align: center;
   color: #171717;
 
@@ -163,7 +167,7 @@ hr {
   padding: 0;
 
   font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 12px;
+  font-size: .75rem;
   line-height: 1rem;
   text-align: left;
   color: #171717;
@@ -198,7 +202,7 @@ hr {
 
   font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 1rem;
-  line-height: 20px;
+  line-height: 1.25rem;
   font-weight: 500;
   text-align: left;
   color: #171717;
@@ -218,7 +222,7 @@ hr {
   margin-bottom: 2rem;
 
   font-family: Lora;
-  font-size: 14px;
+  font-size: .875rem;
   line-height: 1.5rem;
   color: #171717;
 }
@@ -245,7 +249,7 @@ hr {
   font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 1rem;
   font-weight: 500;
-  line-height: 19px;
+  line-height: 1.1875rem;
   text-align: left;
   color: #171717;
 }
@@ -266,15 +270,15 @@ hr {
   justify-content: space-between;
 }
 
-.product-recommended {
+.product-recommended-card {
   margin-bottom: 2rem;
 
-  flex-basis: 130px;
+  flex-basis: 8.125rem;
 }
 
 .product-recommended-photo {
-  width: 130px;
-  height: 174px;
+  width: 8.125rem;
+  height: 10.875rem;
 
   vertical-align: middle;
 }
@@ -285,17 +289,18 @@ hr {
 
   font-family: Lora;
   font-size: 1rem;
-  line-height: 19px;
+  line-height: 1.1875rem;
   color: #171717;
 }
 
 .product-recommended-price {
   margin-top: .5rem;
   margin-bottom: 0;
+  margin-left: 1px;
 
   font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 12px;
-  line-height: 14px;
+  font-size: .75rem;
+  line-height: 1.17;
   color: #999;
 }
 
@@ -318,9 +323,9 @@ hr {
   margin-bottom: 1rem;
 
   font-family: Lora;
-  font-size: 14px;
+  font-size: .875rem;
   font-style: italic;
-  line-height: 17px;
+  line-height: 1.0625rem;
   color: #171717;
 }
 
@@ -340,7 +345,7 @@ footer {
   align-self: left;
 
   font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 12px;
+  font-size: .75rem;
   line-height: 1rem;
   color: #999;
 
@@ -355,8 +360,8 @@ footer {
   align-self: left;
 
   font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 12px;
-  line-height: 16px;
+  font-size: .75rem;
+  line-height: 1rem;
   color: #999;
 
   border-style: none;
@@ -369,7 +374,7 @@ footer {
   font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 1rem;
   font-weight: bold;
-  line-height: 19px;
+  line-height: 1.1875rem;
   text-align: left;
   color: #171717;
 }
@@ -378,9 +383,9 @@ footer {
   margin-bottom: 2rem;
 
   font-family: Lora;
-  font-size: 14px;
+  font-size: .875rem;
   font-style: italic;
-  line-height: 17px;
+  line-height: 1.0625rem;
   text-align: left;
   color: #171717;
 }
