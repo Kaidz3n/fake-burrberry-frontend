@@ -1,3 +1,6 @@
+body {
+  text-rendering: optimizeLegibility;
+}
 header {
   border-bottom: solid 1px #c6c6c6;
 }
@@ -274,6 +277,7 @@ hr {
   margin-bottom: 2rem;
 
   flex-basis: 8.125rem;
+  text-decoration: none;
 }
 
 .product-recommended-photo {
@@ -289,6 +293,7 @@ hr {
 
   font-family: Lora;
   font-size: 1rem;
+  font-weight: 400;
   line-height: 1.1875rem;
   color: #171717;
 }
@@ -300,6 +305,7 @@ hr {
 
   font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: .75rem;
+  font-weight: 400;
   line-height: 1.17;
   color: #999;
 }
@@ -308,6 +314,8 @@ hr {
   margin-left: 1rem;
   margin-right: 1rem;
   margin-bottom: 3rem;
+
+  text-decoration: none;
 }
 
 .product-recommended-more-list {
@@ -388,6 +396,8 @@ footer {
   line-height: 1.0625rem;
   text-align: left;
   color: #171717;
+
+  text-decoration: none;
 }
 
 .footer-help {
