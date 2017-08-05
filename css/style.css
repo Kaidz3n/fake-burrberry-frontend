@@ -60,7 +60,6 @@ hr {
 @media only screen and (min-width: 48rem) {
   .product-images-container {
     margin-left: -.5rem;
-    margin-right: 0;
   }
 }
 
@@ -92,7 +91,9 @@ hr {
 
 @media only screen and (min-width: 48rem) {
   .product-info-container {
-    margin-right: .5rem;
+    margin-right: -.5rem;
+    margin-left: -1rem;
+    margin-top: -1rem;
   }
 }
 
@@ -104,12 +105,6 @@ hr {
   font-size: 1rem;
   line-height: 1.1875rem;
   color: #111;
-}
-
-@media only screen and (min-width: 48rem) {
-  .product-price {
-    margin-right: .5rem;
-  }
 }
 
 .product-id {
@@ -132,7 +127,8 @@ hr {
 
 @media only screen and (min-width: 48rem) {
   .product-color-container {
-    margin-right: .5rem;
+    margin-right: -.5rem;
+    margin-left: -1rem;
   }
 }
 
@@ -185,7 +181,8 @@ hr {
 
 @media only screen and (min-width: 48rem) {
   .product-actions {
-    margin-right: .5rem;
+    margin-right: -.5rem;
+    margin-left: -1rem;
   }
 }
 
@@ -235,8 +232,15 @@ hr {
 }
 
 .product-description-pane {
-  margin-left: 1rem;
-  margin-right: 1rem;
+  border-top: solid 1px #c6c6c6;
+}
+
+@media only screen and (min-width: 48rem) {
+  .product-description-pane {
+    margin-left: -.5rem;
+
+    border: none;
+  }
 }
 
 .product-description-header {
@@ -248,8 +252,17 @@ hr {
   justify-content: space-between;
 }
 
+@media only screen and (min-width: 48rem) {
+  .product-description-header {
+    margin-bottom: 1rem;
+
+    border-top: none;
+  }
+}
+
 .product-description-header-name-container {
   padding: 0;
+  margin-left: 1rem;
 
   background-color: transparent;
   border: none;
@@ -266,23 +279,48 @@ hr {
   color: #171717;
 }
 
+@media only screen and (min-width: 48rem) {
+  .product-description-header-name {
+    padding-left: -1rem;
+  }
+}
+
 .description-pane-opened:after {
+  margin-right: 1rem;
+
   content: url(../images/triangle.svg);
   transform: rotate(180deg);
 }
 
 .description-pane-closed:after {
+  margin-right: 1rem;
+
   content: url(../images/triangle.svg);
 }
 
+@media only screen and (min-width: 48rem) {
+  .description-pane-opened:after {
+    display: none;
+  }
+  .description-pane-closed:after {
+    display: none;
+  }
+}
+
 .product-description-pane-entry {
-  margin-top: 0;
-  margin-bottom: 2rem;
+  margin: 0 1rem 2rem 1rem;
 
   font-family: Lora;
   font-size: .875rem;
   line-height: 1.5rem;
   color: #171717;
+}
+
+@media only screen and (min-width: 48rem) {
+  .product-description-pane-entry {
+    padding-left: -1rem;
+    margin-bottom: 1.5rem;
+  }
 }
 
 .product-description-pane-entry p,
@@ -292,6 +330,16 @@ hr {
   padding: 0;
 
   list-style: none;
+}
+
+.product-accordeon-pane-shipping-and-returns {
+  border-bottom: solid 1px #c6c6c6;
+}
+
+@media only screen and (min-width: 48rem) {
+  .product-accordeon-pane-shipping-and-returns {
+    display: none;
+  }
 }
 
 .product-recommended-container {
