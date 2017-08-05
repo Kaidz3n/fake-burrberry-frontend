@@ -35,6 +35,7 @@ hr {
 
 .product-title {
   margin: 0;
+  margin-left: -.5rem;
   padding: 1rem;
 
   font-family: Lora;
@@ -46,15 +47,15 @@ hr {
 
 @media only screen and (min-width: 48rem) {
   .product-title {
-    padding: 1.5rem .5rem 1.5rem .5rem;
+    padding: 1.5rem .5rem;
     font-size: 1.5rem;
     line-height: 1.75rem;
   }
 }
 
 .product-images-container {
-  margin-left: -1rem;
-  margin-right: -1rem;
+  margin-left: -.5rem;
+  margin-right: -.5rem;
 
   display: flex;
   overflow-x: scroll;
@@ -62,7 +63,7 @@ hr {
 
 @media only screen and (min-width: 48rem) {
   .product-images-container {
-    margin-left: -.5rem;
+    margin-left: 0;
     margin-right: 0;
   }
 }
@@ -91,13 +92,13 @@ hr {
 
 @media only screen and (min-width: 48rem) {
   .product-info-container {
-    margin-top: 0;
-    margin-right: -.5rem;
+    margin: 0 -.5rem;
   }
 }
 
 .product-price {
   margin: 0;
+  margin-left: .5rem;
 
   font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
   font-weight: 400;
@@ -108,6 +109,7 @@ hr {
 
 .product-id {
   margin: 0;
+  margin-right: .5rem;
 
   font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: .75rem;
@@ -116,14 +118,17 @@ hr {
 }
 
 .product-color-container {
+  margin-top: 1rem;
+  margin-left: .5rem;
+  margin-right: .5rem;
   display: flex;
   flex-direction: column;
-  margin-top: 1rem;
 }
 
 @media only screen and (min-width: 48rem) {
   .product-color-container {
-    margin-right: -.5rem;
+    margin-right: 0;
+    margin-left: 0;
   }
 }
 
@@ -168,8 +173,7 @@ hr {
 }
 
 .product-actions {
-  margin-top: 2rem;
-  margin-bottom: 3rem;
+  margin: 2rem .5rem 3rem .5rem;
 
   display: flex;
   flex-direction: column;
@@ -177,7 +181,8 @@ hr {
 
 @media only screen and (min-width: 48rem) {
   .product-actions {
-    margin-right: -.5rem;
+    margin-right: 0;
+    margin-left: 0;
   }
 }
 
@@ -228,6 +233,8 @@ hr {
 
 .product-description-pane {
   padding-top: 2rem;
+  margin-left: -.5rem;
+  margin-right: -.5rem;
 
   border-top: solid 1px #c6c6c6;
 }
@@ -313,7 +320,6 @@ hr {
 @media only screen and (min-width: 48rem) {
   .product-description-pane-entry {
     margin-left: .5rem;
-    margin-right: .5rem;
     margin-bottom: 1.5rem;
   }
 }
@@ -338,8 +344,8 @@ hr {
 }
 
 .delivery-container {
-  margin-left: -.5rem;
-  margin-right: -.5rem;
+  margin-left: 0;
+  margin-right: 0rem;
 }
 
 .delivery-image {
@@ -398,12 +404,13 @@ hr {
 
 @media only screen and (min-width: 48rem) {
   .product-recommended-container {
-    margin: 1.5rem .5rem 2rem .5rem;
+    margin: 1.5rem 1rem 2rem 1rem;
   }
 }
 
 .product-recommended-header {
   margin: 0;
+  margin-left: -.5rem;
 
   font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 1rem;
@@ -411,6 +418,12 @@ hr {
   line-height: 1.1875rem;
   text-align: left;
   color: #171717;
+}
+
+@media only screen and (min-width: 48rem) {
+  .product-recommended-header {
+    margin-left: -1rem;
+  }
 }
 
 .underlined {
@@ -428,8 +441,8 @@ hr {
 }
 
 .product-recommended-list {
-  margin-left: -1.5rem;
-  margin-right: -1.25rem;
+  margin-left: -1rem;
+  margin-right: -.75rem;
 }
 
 @media only screen and (min-width: 48rem) {
@@ -502,8 +515,7 @@ hr {
 }
 
 .product-recommended-more-header {
-  margin: 0;
-  margin-bottom: 1.5rem;
+  margin: 0 0 1.5rem -.5rem;
 
   font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 1rem;
@@ -522,6 +534,7 @@ hr {
 .product-recommended-more-item {
   display: block;
   margin-bottom: 1rem;
+  margin-left: -.5rem;
 
   font-family: Lora;
   font-size: .875rem;
@@ -538,7 +551,7 @@ footer {
 }
 
 .footer-info-container {
-  margin-left: -.5rem;
+  margin-left: 0;
 }
 
 .footer-info-header {
@@ -582,6 +595,7 @@ footer {
   padding: 0;
   margin-right: 1.5rem;
   margin-bottom: 1rem;
+  margin-left: .5rem;
   align-self: left;
 
   font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -593,34 +607,10 @@ footer {
   background-color: transparent;
 }
 
-.footer-shipping-country-select {
-  padding: 0;
-  margin-left: 1rem;
-  margin-bottom: 1rem;
-  align-self: left;
-
-  font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: .75rem;
-  line-height: 1rem;
-  color: #999;
-
-  border-style: none;
-  background-color: transparent;
-}
-
-.footer-language-select {
-  padding: 0;
-  margin-left: 1rem;
-  margin-bottom: 1rem;
-  align-self: left;
-
-  font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: .75rem;
-  line-height: 1rem;
-  color: #999;
-
-  border-style: none;
-  background-color: transparent;
+@media only screen and (min-width: 48rem) {
+  .footer-button {
+    margin-left: 0;
+  }
 }
 
 .footer-help-header {
