@@ -314,8 +314,6 @@ hr {
   margin-left: 1rem;
   margin-right: 1rem;
   margin-bottom: 3rem;
-
-  text-decoration: none;
 }
 
 .product-recommended-more-list {
@@ -335,6 +333,7 @@ hr {
   font-style: italic;
   line-height: 1.0625rem;
   color: #171717;
+  text-decoration: none;
 }
 
 footer {
