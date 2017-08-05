@@ -24,7 +24,7 @@ hr {
 @media only screen and (min-width: 48rem) {
   .logo {
     padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding-bottom: 1.25rem;
   }
 }
 
@@ -53,6 +53,9 @@ hr {
 }
 
 .product-images-container {
+  margin-left: -1rem;
+  margin-right: -1rem;
+
   display: flex;
   overflow-x: scroll;
 }
@@ -60,40 +63,36 @@ hr {
 @media only screen and (min-width: 48rem) {
   .product-images-container {
     margin-left: -.5rem;
+    margin-right: 0;
   }
 }
 
 .product-image {
   width: 300px;
   height: 400px;
-
-  object-fit: contain;
 }
 
 @media screen and (min-width: 48rem) {
   .product-image {
-    padding-left: 1rem;
-
-    width: 432px;
-    height: 576px;
+    min-width: 432px;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
   }
 }
 
 .product-info-container {
-  padding-top: 1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  margin-top: 1rem;
 
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: baseline;
 }
 
 @media only screen and (min-width: 48rem) {
   .product-info-container {
+    margin-top: 0;
     margin-right: -.5rem;
-    margin-left: -1rem;
-    margin-top: -1rem;
   }
 }
 
@@ -117,18 +116,14 @@ hr {
 }
 
 .product-color-container {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 1rem;
-
   display: flex;
   flex-direction: column;
+  margin-top: 1rem;
 }
 
 @media only screen and (min-width: 48rem) {
   .product-color-container {
     margin-right: -.5rem;
-    margin-left: -1rem;
   }
 }
 
@@ -173,7 +168,8 @@ hr {
 }
 
 .product-actions {
-  padding: 2rem 1rem 3rem 1rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
 
   display: flex;
   flex-direction: column;
@@ -182,7 +178,6 @@ hr {
 @media only screen and (min-width: 48rem) {
   .product-actions {
     margin-right: -.5rem;
-    margin-left: -1rem;
   }
 }
 
@@ -232,19 +227,20 @@ hr {
 }
 
 .product-description-pane {
+  padding-top: 2rem;
+
   border-top: solid 1px #c6c6c6;
 }
 
 @media only screen and (min-width: 48rem) {
   .product-description-pane {
-    margin-left: -.5rem;
+    margin-top: 1.5rem;
 
     border: none;
   }
 }
 
 .product-description-header {
-  margin-top: 2rem;
   margin-bottom: 2rem;
 
   display: flex;
@@ -268,6 +264,12 @@ hr {
   border: none;
 }
 
+@media only screen and (min-width: 48rem) {
+  .product-description-header-name-container {
+    margin-left: .5rem;
+  }
+}
+
 .product-description-header-name {
   margin: 0;
 
@@ -277,12 +279,6 @@ hr {
   font-weight: 500;
   text-align: left;
   color: #171717;
-}
-
-@media only screen and (min-width: 48rem) {
-  .product-description-header-name {
-    padding-left: -1rem;
-  }
 }
 
 .description-pane-opened:after {
@@ -318,7 +314,8 @@ hr {
 
 @media only screen and (min-width: 48rem) {
   .product-description-pane-entry {
-    padding-left: -1rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
     margin-bottom: 1.5rem;
   }
 }
