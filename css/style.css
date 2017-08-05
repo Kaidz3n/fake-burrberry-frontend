@@ -295,9 +295,7 @@ hr {
 }
 
 @media only screen and (min-width: 48rem) {
-  .description-pane-opened:after {
-    display: none;
-  }
+  .description-pane-opened:after,
   .description-pane-closed:after {
     display: none;
   }
