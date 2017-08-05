@@ -343,8 +343,8 @@ hr {
 }
 
 .delivery-container {
-  margin-left: -.5rem;
-  margin-right: -.5rem;
+  margin-left: .5rem;
+  margin-right: .5rem;
 }
 
 .delivery-image {
@@ -398,14 +398,18 @@ hr {
 }
 
 .product-recommended-container {
-  margin-left: 1rem;
-  margin-right: 1rem;
-  margin-top: 3rem;
+  margin: 3rem 2rem 1rem 2rem;
 }
 
-.product-recommended-header,
-.product-recommended-more-header {
+@media only screen and (min-width: 48rem) {
+  .product-recommended-container {
+    margin: 1.5rem 1.5rem 2rem 1.5rem;
+  }
+}
+
+.product-recommended-header {
   margin: 0;
+  margin-left: -1rem;
 
   font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 1rem;
@@ -423,24 +427,45 @@ hr {
   border-bottom: solid 1px #171717;
 }
 
-.product-recommended-list {
-  margin-bottom: 1rem;
+@media only screen and (min-width: 48rem) {
+  .underlined {
+    margin-bottom: 1rem;
+  }
+}
 
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.product-recommended-list {
+  margin-left: -1.5rem;
+  margin-right: -1.25rem;
+}
+
+@media only screen and (min-width: 48rem) {
+  .product-recommended-list {
+    margin-left: -1rem;
+    margin-right: -1rem;
+  }
 }
 
 .product-recommended-card {
   margin-bottom: 2rem;
+  margin-right: .5rem;
+  margin-left: .5rem;
 
-  flex-basis: 8.125rem;
+  display: block;
   text-decoration: none;
 }
 
+@media only screen and (min-width: 48rem) {
+  .product-recommended-card {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
 .product-recommended-photo {
-  width: 8.125rem;
-  height: 10.875rem;
+  min-width: 130px;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 
   vertical-align: middle;
 }
@@ -480,6 +505,18 @@ hr {
 
   display: flex;
   flex-direction: column;
+}
+
+.product-recommended-more-header {
+  margin: 0;
+  margin-bottom: 1.5rem;
+
+  font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.1875rem;
+  text-align: left;
+  color: #171717;
 }
 
 .product-recommended-more-item {
