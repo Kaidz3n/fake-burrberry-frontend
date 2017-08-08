@@ -1,0 +1,15 @@
+.logo {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  width: 138px;
+  height: 10px;
+  object-fit: contain;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+
+  border-bottom: solid 1px #c6c6c6;
+}
