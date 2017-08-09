@@ -1,6 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import styled from "styled-components";
+import Images from "./Images";
 
 const Title = styled.h1`
   margin-top: 0;
@@ -27,6 +28,12 @@ function Main() {
       <div className="row">
         <Title>Long Cotton Gabardine Car Coat</Title>
       </div>
+
+      <section className="row">
+        <div className="col-xs-12 col-md-7">
+          <Images />
+        </div>
+      </section>
     </main>
   );
 }
