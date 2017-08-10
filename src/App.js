@@ -1,7 +1,8 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import Header from "./Header";
-import Main from "./Product";
+import Product from "./Product";
+import Footer from "./Footer";
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
         <title>Burberry</title>
       </Helmet>
       <Header />
-      <Main />
+      <Product />
+      <Footer />
     </div>
   );
 }

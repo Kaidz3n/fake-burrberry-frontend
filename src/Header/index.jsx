@@ -4,6 +4,7 @@ import styled from "styled-components";
 
 const Header = styled.header`
   padding: 1rem;
+
   border-bottom: 1px solid #c6c6c6;
   @media screen and (min-width: 48rem) {
     padding: 1.5rem;

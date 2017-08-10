@@ -36,7 +36,7 @@ const Title = styled.h2`
 
 const Icon = styled.img`margin-right: .5rem;`;
 
-function ShippingDescription() {
+export default function() {
   return (
     <Pane>
       <Button type="button">
@@ -46,5 +46,3 @@ function ShippingDescription() {
     </Pane>
   );
 }
-
-export default ShippingDescription;
