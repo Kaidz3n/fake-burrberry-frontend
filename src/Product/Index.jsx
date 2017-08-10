@@ -1,8 +1,9 @@
-import React from "react";
+import React, { Component } from "react";
 import { Helmet } from "react-helmet";
 import styled from "styled-components";
 import Images from "./Images";
 import Information from "./Information";
+import Description from "./Description";
 
 const Title = styled.h1`
   margin: 0;
@@ -39,6 +40,10 @@ function Main() {
         <div className="col-xs-12 col-md-5">
           <Information />
         </div>
+      </section>
+
+      <section className="row">
+        <Description title="DESCRIPTION" />
       </section>
     </main>
   );
