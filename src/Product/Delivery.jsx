@@ -45,6 +45,7 @@ const Subtitle = styled.h3`
 
 const Text = styled.p`
   margin-bottom: 1.5rem !important;
+
   line-height: 1.35 !important;
   font-size: .75rem !important;
   font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;

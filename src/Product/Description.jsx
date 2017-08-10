@@ -3,10 +3,12 @@ import triangleIcon from "../assets/triangle.svg";
 import styled from "styled-components";
 
 export const Container = styled.section`
+  padding: 2rem 1rem;
+
   position: relative;
   display: flex;
   flex-basis: 100%;
-  padding: 2rem 1rem;
+
   flex-wrap: wrap;
   border-top: 1px solid #c6c6c6;
   border-bottom: 1px solid #c6c6c6;
@@ -55,6 +57,7 @@ export const Title = styled.h2`
 export const Content = styled.div`
   display: ${props => (props.active ? `block` : "none")};
   margin-top: 2rem;
+
   font-size: .875rem;
   font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
   line-height: 1.5rem;

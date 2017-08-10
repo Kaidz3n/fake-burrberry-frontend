@@ -34,8 +34,10 @@ const Recommendations = styled.section`
 const More = styled.div`@media screen and (min-width: 48rem) {display: none;}`;
 
 const Link = styled.a`
-  display: block;
   margin-bottom: 1rem;
+
+  display: block;
+
   line-height: 1.0625rem;
   font-size: .875rem;
   font-style: italic;

@@ -4,15 +4,19 @@ import styled from "styled-components";
 const Navigation = styled.div`
   display: none;
   @media screen and (min-width: 48rem) {
+    padding-top: 0;
+
     flex-basis: 100%;
     display: block;
-    padding-top: 0;
   }
 `;
 
 const Link = styled.a`
-  display: block;
   margin-bottom: .75rem;
+  margin-bottom: .75rem;
+
+  display: block;
+
   font-size: .75rem;
   font-family: Raleway, 'Helvetica Neue', Helvetica, Arial;
   font-weight: 500;
@@ -24,6 +28,7 @@ const Link = styled.a`
 const Title = styled.h3`
   margin-top: 0;
   margin-bottom: 1rem;
+
   font-size: .75rem;
   font-family: Raleway, 'Helvetica Neue', Helvetica, Arial;
   font-weight: bold;
