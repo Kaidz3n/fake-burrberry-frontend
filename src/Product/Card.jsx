@@ -16,6 +16,7 @@ const Name = styled.h3`
   margin-top: .5rem;
   margin-bottom: .5rem;
 
+  font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.19;
@@ -27,7 +28,7 @@ const Price = styled.h5`
   line-height: 1.17;
   font-size: .75rem;
   font-weight: 400;
-  font-family: Raleway, 'Helvetica Neue', Helvetica, Arial;
+  font-family: font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
   text-align: left;
   color: #999999;
 `;

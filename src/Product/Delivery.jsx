@@ -1,9 +1,9 @@
-import React, { Component } from "react";
+import React from "react";
 import styled from "styled-components";
 
 const Content = styled.section`
-  margin-left: .5rem;
-  margin-right: .5rem;
+  margin-left: 0;
+  margin-right: 0;
   @media only screen and (max-width: 47.99rem) {
     display: none;
   }
@@ -27,6 +27,7 @@ const Title = styled.h2`
   line-height: 1.1875rem;
   font-weight: 500;
   text-align: left;
+  text-transform: uppercase;
   color: #171717;
 `;
 
@@ -43,14 +44,10 @@ const Subtitle = styled.h3`
 `;
 
 const Text = styled.p`
-  margin-top: 0;
-  margin-bottom: 1.5rem;
-
+  margin-bottom: 1.5rem !important;
+  line-height: 1.35 !important;
+  font-size: .75rem !important;
   font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: .75rem;
-  line-height: 1rem;
-  text-align: left;
-  color: #171717;
 `;
 
 function Delivery() {
@@ -65,7 +62,7 @@ function Delivery() {
           />
         </div>
         <div className="col-md-5">
-          <Title>DELIVERY</Title>
+          <Title>Delivery</Title>
           <Subtitle>Free Next Day Delivery</Subtitle>
           <Text>
             Order before 7pm Monday to Thursday for delivery the next day

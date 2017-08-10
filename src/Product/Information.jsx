@@ -5,25 +5,26 @@ import ColorButton from "./ColorButton.jsx";
 import HelpButton from "./HelpButton.jsx";
 
 const Content = styled.section`
+  margin: .5rem;
+
   font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
+  @media only screen and (min-width: 48rem) {
+    margin: 0;
+  }
 `;
 
 const PriceId = styled.div`
   margin-top: 1rem;
+  margin-bottom: 1rem;
 
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   }
-
-  @media only screen and (min-width: 48rem) {
-    margin: 0 -.5rem;
-  }
 `;
 
 const Price = styled.h2`
   margin: 0;
-  margin-left: .5rem;
 
   font-weight: 400;
   font-size: 1rem;
@@ -33,7 +34,6 @@ const Price = styled.h2`
 
 const Id = styled.p`
   margin: 0;
-  margin-right: .5rem;
 
   font-size: .75rem;
   line-height: 1rem;
@@ -48,14 +48,14 @@ const Color = styled.p`
 `;
 
 const ButtonColorContainer = styled.div`
-  margin: 1rem 0;
+  margin: 1rem 0 2rem 0;
 
   display: flex;
   flex-wrap: wrap;
 `;
 
 const ButtonContainer = styled.div`
-  margin: 2rem 0 3rem 0;
+  margin: 1rem 0 3rem 0;
 
   display: flex;
   flex-direction: column;

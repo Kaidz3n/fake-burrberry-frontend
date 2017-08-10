@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import Card from "./Card";
 import styled from "styled-components";
 
@@ -10,7 +10,8 @@ const Title = styled.h2`
   display: inline-block;
 
   line-height: 1.1875rem;
-  font-family: Raleway, 'Helvetica Neue', Helvetica, Arial;
+  font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight: 500;
   font-size: 1rem;
   border-bottom: 1px solid #171717;
   @media screen and (min-width: 48rem) {
