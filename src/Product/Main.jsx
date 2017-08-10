@@ -2,9 +2,11 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import styled from "styled-components";
 import Images from "./Images";
+import Information from "./Information";
 
 const Title = styled.h1`
-  margin-top: 0;
+  margin: 0;
+  margin-left: 0;
   padding: 1rem;
 
   font-family: Lora;
@@ -32,6 +34,10 @@ function Main() {
       <section className="row">
         <div className="col-xs-12 col-md-7">
           <Images />
+        </div>
+
+        <div className="col-xs-12 col-md-5">
+          <Information />
         </div>
       </section>
     </main>

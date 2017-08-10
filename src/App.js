@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import Header from "./Header/Header";
-import Main from "./Product/Main";
+import Header from "./Header/Header.jsx";
+import Main from "./Product/Main.jsx";
 
 function App() {
   return (
