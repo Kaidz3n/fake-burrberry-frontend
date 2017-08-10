@@ -6,6 +6,7 @@ import Information from "./Information";
 import Description from "./Description";
 import Delivery from "./Delivery";
 import ShippingDescription from "./ShippingDescription";
+import Recommendations from "./Recommendations";
 
 const Title = styled.h1`
   margin: 0;
@@ -51,6 +52,10 @@ function Main() {
       <section className="row">
         <ShippingDescription />
         <Delivery />
+      </section>
+
+      <section className="row">
+        <Recommendations />
       </section>
     </main>
   );
