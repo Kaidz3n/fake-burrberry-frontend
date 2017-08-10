@@ -13,9 +13,7 @@ const Content = styled.button`
 `;
 
 function ColorButton(props) {
-  return (
-    <Content color={props.colorSelect} active={props.active} type="button" />
-  );
+  return <Content color={props.Value} active={props.active} type="button" />;
 }
 
 export default ColorButton;

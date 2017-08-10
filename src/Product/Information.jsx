@@ -79,13 +79,8 @@ function Information() {
       <Color>Colour: Honey</Color>
 
       <ButtonColorContainer>
-        <ColorButton colorName="black" colorSelect="#232122" type="button" />
-        <ColorButton
-          colorName="honey"
-          colorSelect="#cfa880"
-          type="button"
-          active
-        />
+        <ColorButton Name="black" Value="#232122" type="button" />
+        <ColorButton Name="honey" Value="#cfa880" type="button" active />
       </ButtonColorContainer>
 
       <Hr />
