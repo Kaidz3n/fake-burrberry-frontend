@@ -52,28 +52,28 @@ export default function() {
           <Card
             image="img/card1.jpg"
             name="Emroided Hooded Content For Three Lines"
-            price="27 000 руб."
+            price={27000}
           />
         </div>
         <div className="col-xs-6 col-md-3">
           <Card
             image="img/card2.jpg"
             name="Relaxed Fit Stretch Jeans Content For Three Lines"
-            price="22 500 руб."
+            price={22500}
           />
         </div>
         <div className="col-xs-6 col-md-3">
           <Card
             image="img/card3.jpg"
             name="Leather and House Check Content For Three Lines"
-            price="120 000 руб."
+            price={120000}
           />
         </div>
         <div className="col-xs-6 col-md-3">
           <Card
             image="img/card4.jpg"
             name="Leather Wingtip Check Content For Three Lines"
-            price="46 000 руб."
+            price={46000}
           />
         </div>
       </div>

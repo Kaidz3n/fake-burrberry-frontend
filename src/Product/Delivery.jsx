@@ -22,6 +22,7 @@ const Image = styled.img`
 
 const Title = styled.h2`
   margin: 0;
+  margin-left: .5rem;
 
   font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 1rem;
@@ -34,7 +35,8 @@ const Title = styled.h2`
 
 const Subtitle = styled.h3`
   margin-top: 1rem;
-  margin-bottom: 0.25rem;
+  margin-bottom: -.5rem;
+  margin-left: .5rem;
 
   font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: .75rem;
@@ -46,6 +48,7 @@ const Subtitle = styled.h3`
 
 const Text = styled.p`
   margin-bottom: 1.5rem !important;
+  margin-left: .5rem !important;
 
   line-height: 1.35 !important;
   font-size: .75rem !important;
