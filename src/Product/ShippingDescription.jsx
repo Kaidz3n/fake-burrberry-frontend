@@ -1,38 +1,50 @@
 import React from "react";
-import Description from "./Description";
-import { Container, Button, Title, Content } from "./Description";
+import styled from "styled-components";
+import triangleIcon from "../assets/triangle.svg";
 
-const ShipContainer = Container.extend`
-  border-top: none;
-  margin-bottom: 1.9375rem;
-  @media screen and (min-width: 48rem) {
-    margin-bottom: .5rem;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-`;
+const Button = styled.button`
+  padding: 1rem;
+  display: flex;
+  flex-basis: 100%;
+  justify-content: space-between;
 
-const ShipTitle = Title.extend`
+  align-items: baseline;
+  border: none;
+  background: transparent;
+
+  border-bottom: solid 1px #c6c6c6;
   @media screen and (min-width: 48rem) {
     display: none;
   }
 `;
 
-class ShippingDescription extends Description {
-  render() {
-    return (
-      <ShipContainer active={this.state.active}>
-        <Button type="button" onClick={this.toggleActive}>
-          <ShipTitle>
-            {this.props.title}
-          </ShipTitle>
-        </Button>
-        <Content active={this.state.active}>
-          {this.props.children}
-        </Content>
-      </ShipContainer>
-    );
-  }
-}
+const Title = styled.h2`
+  margin: 2;
 
-export default ShippingDescription;
+  font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  line-height: 1.25rem;
+  font-weight: 500;
+  text-align: left;
+  color: #171717;
+  @media screen and (min-width: 48rem) {
+    display: none;
+  }
+`;
+
+const Icon = styled.img`
+  margin: 0;
+  @media screen and (min-width: 48rem) {
+    display: none;
+  }
+`;
+
+export default function() {
+  return (
+    <Button type="button">
+      <Title>Shipping & Returns</Title>
+      <Icon alt="icon" src={triangleIcon} />
+    </Button>
+  );
+}

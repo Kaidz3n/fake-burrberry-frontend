@@ -3,13 +3,14 @@ import styled from "styled-components";
 
 const Content = styled.section`
   margin-left: 0;
-  margin-right: 0;
+  margin-right: .5rem;
   @media only screen and (max-width: 47.99rem) {
     display: none;
   }
 `;
 
 const Image = styled.img`
+  margin-left: .5rem;
   min-width: 432px;
   width: 100%;
   max-width: 100%;
@@ -51,12 +52,12 @@ const Text = styled.p`
   font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
 `;
 
-function Delivery() {
+export default function() {
   return (
     <Content>
       <div className="row">
         <div className="col-md-7">
-          <img
+          <Image
             src="img/bitmap5.jpg"
             srcset="img/bitmap5@2x.jpg 2x, img/bitmap5@3x.jpg 3x"
             alt="Product image"
@@ -88,5 +89,3 @@ function Delivery() {
     </Content>
   );
 }
-
-export default Delivery;

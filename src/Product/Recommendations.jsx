@@ -20,10 +20,7 @@ const Title = styled.h2`
 `;
 
 const Recommendations = styled.section`
-  padding-top: 0;
-  padding-right: 1rem;
-  padding-left: 1rem;
-  padding-bottom: 3rem;
+  padding: 2rem 1rem 3rem 1rem;
   @media screen and (min-width: 48rem) {
     padding-right: .5rem;
     padding-bottom: 2rem;
@@ -38,11 +35,12 @@ const Link = styled.a`
 
   display: block;
 
-  line-height: 1.0625rem;
+  font-family: Lora;
   font-size: .875rem;
   font-style: italic;
+  line-height: 1.0625rem;
+  color: #171717;
   text-decoration: none;
-  color: inherit;
 `;
 
 export default function() {

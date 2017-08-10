@@ -46,7 +46,7 @@ function Product() {
       </section>
 
       <section className="row">
-        <Description title="Description">
+        <Description>
           <p>A refined car coat crafted in protective cotton gabardine.</p>
           <p>
             Invented by Thomas Burberry in 1879, cotton gabardine is a tightly
@@ -75,9 +75,8 @@ function Product() {
       </section>
 
       <section className="row">
-        <ShippingDescription title="Shipping & Returns">
-          <Delivery />
-        </ShippingDescription>
+        <ShippingDescription />
+        <Delivery />
       </section>
 
       <section className="row">

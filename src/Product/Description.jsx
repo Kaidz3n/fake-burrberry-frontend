@@ -72,7 +72,7 @@ export const Content = styled.div`
     margin: 0;
     padding: 0;
 
-    font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: Lora;
     font-size: .875rem;
     line-height: 1.5rem;
     list-style: none;
@@ -98,9 +98,7 @@ class Description extends Component {
     return (
       <Container active={this.state.active}>
         <Button type="button" onClick={this.toggle}>
-          <Title>
-            {this.props.title}
-          </Title>
+          <Title>Description</Title>
         </Button>
         <Content active={this.state.active}>
           {this.props.children}
