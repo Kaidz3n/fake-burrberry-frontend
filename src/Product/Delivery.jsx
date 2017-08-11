@@ -4,8 +4,10 @@ import styled from "styled-components";
 const Content = styled.section`
   margin-left: 0;
   margin-right: .5rem;
-  @media only screen and (max-width: 48rem) {
-    display: none;
+
+  display: none;
+  @media only screen and (min-width: 48rem) {
+    display: block;
   }
 `;
 
