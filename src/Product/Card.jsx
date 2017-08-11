@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-
-let NumberFormat = require("react-number-format");
+import NumberFormat from "react-number-format";
 
 const Card = styled.a`
   display: block;
@@ -68,9 +67,9 @@ export default function(props) {
       <Price>
         <NumberFormat
           value={props.price}
-          displayType={"text"}
-          thousandSeparator={" "}
-          suffix={" руб."}
+          displayType="text"
+          thousandSeparator=" "
+          suffix=" руб."
         />
       </Price>
     </Card>
