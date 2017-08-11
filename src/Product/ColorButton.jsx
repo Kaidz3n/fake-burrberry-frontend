@@ -13,5 +13,5 @@ const Button = styled.button`
 `;
 
 export default function(props) {
-  return <Button color={props.Value} active={props.active} type="button" />;
+  return <Button color={props.value} active={props.active} type="button" />;
 }
