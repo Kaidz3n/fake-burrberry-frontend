@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import triangleIcon from "../assets/triangle.svg";
 import styled from "styled-components";
 
-export const Container = styled.section`
+const Container = styled.section`
   padding: 2rem 1rem;
 
   position: relative;
@@ -30,7 +30,7 @@ export const Container = styled.section`
   }
 `;
 
-export const Button = styled.button`
+const Button = styled.button`
   padding: 0;
 
   display: flex;
@@ -42,7 +42,7 @@ export const Button = styled.button`
   background: transparent;
 `;
 
-export const Title = styled.h2`
+const Title = styled.h2`
   margin: 0;
 
   font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -54,7 +54,7 @@ export const Title = styled.h2`
   color: #171717;
 `;
 
-export const Content = styled.div`
+const Content = styled.div`
   display: ${props => (props.active ? `block` : "none")};
   margin-top: 2rem;
 

@@ -47,12 +47,14 @@ const Subtitle = styled.h3`
 `;
 
 const Text = styled.p`
-  margin-bottom: 1.5rem !important;
-  margin-left: .5rem !important;
+  margin-bottom: 1.5rem;
+  margin-left: .5rem;
 
-  line-height: 1.35 !important;
-  font-size: .75rem !important;
   font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: .75rem;
+  line-height: 1.33;
+  text-align: left;
+  color: #171717;
 `;
 
 export default function() {
