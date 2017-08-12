@@ -5,7 +5,8 @@ import triangleIcon from "../assets/triangle.svg";
 const Button = styled.button`
   display: flex;
   flex-basis: 100%;
-  padding: 1rem 0;
+  padding: 1rem 1rem;
+  margin-left: -1rem;
   border: none;
   background: transparent;
   border-bottom: solid 1px #c6c6c6;

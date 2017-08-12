@@ -7,8 +7,8 @@ const Content = styled.div`
   display: flex;
   overflow-x: scroll;
   @media only screen and (min-width: 48rem) {
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: -.5rem;
+    margin-right: .5rem;
   }
 `;
 
@@ -27,9 +27,10 @@ const Image = styled.img`
 `;
 
 const DesktopImage = styled.img`
-  width: 100%;
-  @media only screen and (max-width: 62rem) {
-    display: none;
+  display: none;
+  @media only screen and (min-width: 62rem) {
+    display: block;
+    width: 100%;
   }
 `;
 

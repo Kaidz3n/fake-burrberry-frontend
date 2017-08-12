@@ -10,7 +10,8 @@ import SizeButton from "./SizeButton.jsx";
 const Content = styled.section`
   font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
   @media only screen and (min-width: 48rem) {
-    margin: -1rem 0;
+    margin-top: -1rem;
+    margin-left: -.5rem;
   }
 `;
 

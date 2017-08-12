@@ -2,9 +2,9 @@ import React from "react";
 import styled from "styled-components";
 
 const Content = styled.section`
-  margin-left: 0;
+  margin-left: -1rem;
+  margin-right: 0;
   margin-right: .5rem;
-
   display: none;
   @media only screen and (min-width: 48rem) {
     display: block;

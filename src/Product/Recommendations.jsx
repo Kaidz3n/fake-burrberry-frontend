@@ -19,11 +19,11 @@ const Title = styled.h2`
 `;
 
 const Recommendations = styled.section`
-  padding: 2rem .5rem 3rem .5rem;
+  padding: 3rem .5rem 3rem .5rem;
   @media screen and (min-width: 48rem) {
-    padding-right: .5rem;
+    padding-right: 1rem;
     padding-bottom: 2rem;
-    padding-left: .5rem;
+    padding-left: 0;
   }
 `;
 

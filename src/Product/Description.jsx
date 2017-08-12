@@ -4,6 +4,8 @@ import styled from "styled-components";
 
 const Container = styled.section`
   padding: 2rem 0;
+  margin-left: -1rem;
+  margin-right: -1rem;
   display: flex;
   flex-basis: 100%;
   flex-wrap: wrap;
@@ -38,8 +40,7 @@ const Button = styled.button`
 `;
 
 const Title = styled.h2`
-  margin: 0;
-
+  margin: 0 1rem;
   font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 1rem;
   text-transform: uppercase;
@@ -47,16 +48,23 @@ const Title = styled.h2`
   font-weight: 500;
   text-align: left;
   color: #171717;
+  @media screen and (min-width: 48rem) {
+    margin-left: 0;
+    margin-bottom: 1rem;
+  }
 `;
 
 const Content = styled.div`
   display: ${props => (props.active ? `block` : "none")};
   margin-top: 2rem;
+  margin-left: -1rem;
   font-size: .875rem;
   font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
   line-height: 1.5rem;
   @media screen and (min-width: 48rem) {
     margin-top: 0;
+    margin-left: 0;
+    margin-right: 2rem;
     display: flex;
     flex-direction: column;
   }
