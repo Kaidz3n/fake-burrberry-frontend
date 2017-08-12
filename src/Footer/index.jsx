@@ -5,13 +5,11 @@ import styled from "styled-components";
 const Footer = styled.footer`
   padding: 1rem .5rem 2rem .5rem;
   background: #f3f3f3;
-
   @media screen and (min-width: 48rem) {
     padding: 2rem 0;
     display: flex;
     flex-wrap: wrap;
   }
-
   @media screen and (min-width: 62rem) {
     padding-top: 4rem;
     padding-bottom: 4rem;
@@ -28,13 +26,11 @@ const Button = styled.button`
   background: transparent;
   border: none;
   color: #999;
-
   @media screen and (min-width: 48rem) {
     margin-top: 1.25rem;
     margin-right: 1.25rem;
     display: inline-block;
   }
-
   @media screen and (min-width: 62rem) {
     margin-top: 1.25rem;
     margin-right: 4.5rem;
@@ -69,7 +65,7 @@ const Link = styled.a`
   }
 `;
 
-export default () => {
+export default function() {
   return (
     <Footer>
       <div className="container">
@@ -81,4 +77,4 @@ export default () => {
       </div>
     </Footer>
   );
-};
+}

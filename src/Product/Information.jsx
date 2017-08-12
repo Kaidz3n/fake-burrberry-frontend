@@ -13,6 +13,9 @@ const Content = styled.section`
     margin-top: -1rem;
     margin-left: -.5rem;
   }
+  @media only screen and (min-width: 62rem) {
+    margin-right: 1rem;
+  }
 `;
 
 const PriceId = styled.div`
@@ -22,7 +25,6 @@ const PriceId = styled.div`
   justify-content: space-between;
   align-items: baseline;
   }
-
   @media screen and (min-width: 62rem) {
     margin-bottom: 3rem;
   }
@@ -54,6 +56,10 @@ const Color = styled.p`
   margin: 0;
   font-size: .75rem;
   line-height: 1rem;
+  @media screen and (min-width: 62rem) {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
 `;
 
 const ButtonColorContainer = styled.div`
@@ -63,9 +69,9 @@ const ButtonColorContainer = styled.div`
 `;
 
 const ButtonContainer = styled.div`
-  margin: 1rem 0 3rem 0;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 1rem 0;
   @media screen and (min-width: 62rem) {
     margin: 0;
   }
@@ -73,7 +79,6 @@ const ButtonContainer = styled.div`
 
 const Hr = styled.hr`
   margin: 0;
-
   border-top: none;
   border-bottom: solid 1px #c6c6c6;
 `;
@@ -113,7 +118,7 @@ const Text = styled.p`
   font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
 `;
 
-export default () => {
+export default function() {
   return (
     <Content>
       <Medium>
@@ -156,7 +161,9 @@ export default () => {
             </Price>
           </div>
           <div className="col-lg-6">
-            <Color>Colour: Honey</Color>
+            <Color>
+              Colour: <b>Honey</b>
+            </Color>
             <ButtonContainer>
               <ColorButton name="black" value="#232122" type="button" />
               <ColorButton name="honey" value="#cfa880" type="button" active />
@@ -200,4 +207,4 @@ export default () => {
       </Large>
     </Content>
   );
-};
+}

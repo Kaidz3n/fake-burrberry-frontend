@@ -3,10 +3,8 @@ import styled from "styled-components";
 
 const Button = styled.button`
   margin-right: 1rem;
-
   width: 40px;
   height: 40px;
-
   border-radius: 50%;
   border: ${props => (props.active ? "solid 1px #232122" : "none")};
   background-color: ${props => props.color};

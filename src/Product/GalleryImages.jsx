@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 
 const Content = styled.div`
+  margin-left: -.5rem;
+  margin-right: .5rem;
   display: flex;
   box-sizing: border-box;
   flex: 0 1 auto;
@@ -23,7 +25,7 @@ const Image = styled.img`
   width: 100%;
 `;
 
-export default () => {
+export default function() {
   return (
     <Content>
       <div className="col-lg-4">
@@ -37,4 +39,4 @@ export default () => {
       </div>
     </Content>
   );
-};
+}

@@ -34,7 +34,7 @@ const DesktopImage = styled.img`
   }
 `;
 
-function Images() {
+export default function() {
   return (
     <Content>
       <Image
@@ -61,5 +61,3 @@ function Images() {
     </Content>
   );
 }
-
-export default Images;

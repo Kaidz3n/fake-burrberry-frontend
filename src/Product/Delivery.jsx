@@ -29,7 +29,6 @@ const Image = styled.img`
 const Title = styled.h2`
   margin: 0;
   margin-left: .5rem;
-
   font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 1rem;
   line-height: 1.1875rem;
@@ -37,13 +36,15 @@ const Title = styled.h2`
   text-align: left;
   text-transform: uppercase;
   color: #171717;
+  @media screen and (min-width: 62rem) {
+    margin-top: 5rem;
+  }
 `;
 
 const Subtitle = styled.h3`
   margin-top: 1rem;
   margin-bottom: -.5rem;
   margin-left: .5rem;
-
   font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: .75rem;
   line-height: .875rem;
@@ -55,7 +56,6 @@ const Subtitle = styled.h3`
 const Text = styled.p`
   margin-bottom: 1.5rem;
   margin-left: .5rem;
-
   font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: .75rem;
   line-height: 1.33;
@@ -63,7 +63,7 @@ const Text = styled.p`
   color: #171717;
 `;
 
-export default () => {
+export default function() {
   return (
     <Content>
       <div className="row">
@@ -74,7 +74,7 @@ export default () => {
             alt="Product image"
           />
         </div>
-        <div className="col-md-5">
+        <div className="col-md-5 col-lg-4 col-lg-offset-1">
           <Title>Delivery</Title>
           <Subtitle>Free Next Day Delivery</Subtitle>
           <Text>
@@ -99,4 +99,4 @@ export default () => {
       </div>
     </Content>
   );
-};
+}

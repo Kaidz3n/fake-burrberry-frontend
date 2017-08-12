@@ -5,7 +5,6 @@ import NumberFormat from "react-number-format";
 const Card = styled.a`
   display: block;
   margin-bottom: 2rem;
-
   font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
   font-weight: 400;
 `;
@@ -20,7 +19,6 @@ const Name = styled.h3`
   margin-top: .5rem;
   margin-bottom: .5rem;
   margin-right: 1rem;
-
   font-family: Lora;
   font-size: 1rem;
   font-weight: 400;
@@ -33,7 +31,6 @@ const Name = styled.h3`
 const FullName = styled.h3`
   margin-top: .5rem;
   margin-bottom: .5rem;
-
   font-family: Lora;
   font-size: 1rem;
   font-weight: 400;
@@ -45,7 +42,6 @@ const FullName = styled.h3`
 
 const Price = styled.h5`
   margin: 0;
-
   line-height: 1.17;
   font-size: .75rem;
   font-weight: 400;

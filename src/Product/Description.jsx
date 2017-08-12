@@ -16,6 +16,9 @@ const Container = styled.section`
     border-top: 1px solid transparent;
     padding: 1.5rem .5rem;
   }
+  @media screen and (min-width: 62rem) {
+    margin-top: 2.5rem;
+  }
   ::after {
     position: absolute;
     content: url(${triangleIcon});
@@ -74,7 +77,6 @@ const Content = styled.div`
   li {
     margin: 0;
     padding: 0;
-
     font-family: Lora;
     font-size: .875rem;
     line-height: 1.5rem;

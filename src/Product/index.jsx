@@ -25,7 +25,6 @@ const Title = styled.h1`
   margin: 0;
   margin-left: -1rem;
   padding: 1rem;
-
   font-family: Lora;
   font-size: 1.25rem;
   font-weight: 400;
@@ -39,12 +38,13 @@ const Title = styled.h1`
 `;
 
 const Image = styled.img`
-  display: block;
   width: 100%;
+  display: block;
   margin-top: 4rem;
+  margin-left: -.5rem;
 `;
 
-export default () => {
+export default function() {
   return (
     <main className="container">
       <Helmet>
@@ -145,4 +145,4 @@ export default () => {
       </section>
     </main>
   );
-};
+}

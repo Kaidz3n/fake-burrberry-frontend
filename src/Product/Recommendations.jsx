@@ -4,11 +4,9 @@ import styled from "styled-components";
 
 const Title = styled.h2`
   margin-top: 1rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: .5rem;
   padding-bottom: .5rem;
-
   display: inline-block;
-
   line-height: 1.1875rem;
   font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
   font-weight: 500;
@@ -16,10 +14,14 @@ const Title = styled.h2`
   @media screen and (min-width: 48rem) {
     margin-bottom: 1rem;
   }
+  @media screen and (min-width: 48rem) {
+    display: flex;
+    justify-content: center;
+  }
 `;
 
 const Recommendations = styled.section`
-  padding: 3rem .5rem 3rem .5rem;
+  padding: 2rem .5rem 3rem .5rem;
   @media screen and (min-width: 48rem) {
     padding-right: 1rem;
     padding-bottom: 2rem;
@@ -31,9 +33,7 @@ const More = styled.div`@media screen and (min-width: 48rem) {display: none;}`;
 
 const Link = styled.a`
   margin-bottom: 1rem;
-
   display: block;
-
   font-family: Lora;
   font-size: .875rem;
   font-style: italic;
