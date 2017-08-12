@@ -45,7 +45,7 @@ const Price = styled.h5`
   line-height: 1.17;
   font-size: .75rem;
   font-weight: 400;
-  font-family: font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
   text-align: left;
   color: #999999;
 `;
