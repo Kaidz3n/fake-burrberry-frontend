@@ -4,11 +4,9 @@ import styled from "styled-components";
 
 const Container = styled.section`
   padding: 2rem 1rem;
-
   position: relative;
   display: flex;
   flex-basis: 100%;
-
   flex-wrap: wrap;
   border-top: 1px solid #c6c6c6;
   border-bottom: 1px solid #c6c6c6;
@@ -32,11 +30,9 @@ const Container = styled.section`
 
 const Button = styled.button`
   padding: 0;
-
   display: flex;
   flex-basis: 100%;
   justify-content: space-between;
-
   align-items: baseline;
   border: none;
   background: transparent;
@@ -57,15 +53,15 @@ const Title = styled.h2`
 const Content = styled.div`
   display: ${props => (props.active ? `block` : "none")};
   margin-top: 2rem;
-
   font-size: .875rem;
   font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
   line-height: 1.5rem;
   @media screen and (min-width: 48rem) {
+    margin-top: 0;
     display: flex;
     flex-direction: column;
-    margin-top: 0;
   }
+
   p,
   ul,
   li {

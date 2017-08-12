@@ -22,6 +22,14 @@ const Image = styled.img`
     width: 100%;
     height: auto;
   }
+  @media only screen and (min-width: 62rem) {
+    display: none;
+  }
+`;
+
+const DesktopImage = styled.img`
+  display: block;
+  width: 100%;
 `;
 
 function Images() {
@@ -47,6 +55,7 @@ function Images() {
         srcset="img/bitmap4@2x.jpg 2x, img/bitmap4@3x.jpg 3x"
         alt="product-image"
       />
+      <DesktopImage src="img/desktop1.jpg" alt="product-image" />
     </Content>
   );
 }
