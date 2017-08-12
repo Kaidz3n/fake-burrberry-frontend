@@ -7,7 +7,7 @@ import Description from "./Description";
 import Delivery from "./Delivery";
 import ShippingDescription from "./ShippingDescription";
 import Recommendations from "./Recommendations";
-import { Mobile, Desktop } from "../Common/responsive";
+import { Medium, Large } from "../Common/responsive";
 import GalleryImages from "./GalleryImages";
 
 const Content = styled.section`
@@ -23,7 +23,7 @@ const Wrapper = styled.div`
 
 const Title = styled.h1`
   margin: 0;
-  margin-left: 0;
+  margin-left: -1rem;
   padding: 1rem;
 
   font-family: Lora;
@@ -51,7 +51,7 @@ export default () => {
         <title>Long Cotton Gabardine Car Coat | Men - Burberry</title>
       </Helmet>
 
-      <Mobile>
+      <Medium>
         <section className="container">
           <div className="row">
             <div className="col-xs-12">
@@ -59,8 +59,8 @@ export default () => {
             </div>
           </div>
         </section>
-      </Mobile>
-      <Mobile>
+      </Medium>
+      <Medium>
         <section className="container">
           <div className="row">
             <div className="col-xs-12 col-md-7">
@@ -71,9 +71,9 @@ export default () => {
             </div>
           </div>
         </section>
-      </Mobile>
+      </Medium>
 
-      <Desktop>
+      <Large>
         <Content>
           <div className="container">
             <div className="row">
@@ -91,7 +91,7 @@ export default () => {
             </div>
           </div>
         </Content>
-      </Desktop>
+      </Large>
 
       <section className="container">
         <div className="row">
@@ -124,17 +124,17 @@ export default () => {
               </ul>
             </Description>
           </div>
-          <Desktop>
+          <Large>
             <div className="col-lg-8">
               <Image src="img/desktop2.jpg" alt="product-image" />
             </div>
-          </Desktop>
+          </Large>
         </div>
-        <Desktop>
+        <Large>
           <div className="row">
             <GalleryImages />
           </div>
-        </Desktop>
+        </Large>
 
         <ShippingDescription />
         <Delivery />

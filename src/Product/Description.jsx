@@ -3,8 +3,7 @@ import triangleIcon from "../assets/triangle.svg";
 import styled from "styled-components";
 
 const Container = styled.section`
-  padding: 2rem 1rem;
-  position: relative;
+  padding: 2rem 0;
   display: flex;
   flex-basis: 100%;
   flex-wrap: wrap;

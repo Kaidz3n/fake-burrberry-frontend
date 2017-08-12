@@ -4,11 +4,10 @@ import Button from "../Common/Button.jsx";
 import ColorButton from "./ColorButton.jsx";
 import HelpButton from "./HelpButton.jsx";
 import NumberFormat from "react-number-format";
-import { Mobile, Desktop } from "../Common/responsive";
+import { Medium, Large } from "../Common/responsive";
 import SizeButton from "./SizeButton.jsx";
 
 const Content = styled.section`
-  margin: .5rem;
   font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
   @media only screen and (min-width: 48rem) {
     margin: -1rem 0;
@@ -116,7 +115,7 @@ const Text = styled.p`
 export default () => {
   return (
     <Content>
-      <Mobile>
+      <Medium>
         <PriceId>
           <Price>
             <NumberFormat
@@ -141,9 +140,9 @@ export default () => {
           <Button type="button">Find in store</Button>
           <HelpButton type="button">Need size help?</HelpButton>
         </ButtonContainer>
-      </Mobile>
+      </Medium>
 
-      <Desktop>
+      <Large>
         <div className="row">
           <div className="col-lg-12">
             <Price>
@@ -197,7 +196,7 @@ export default () => {
             </Text>
           </div>
         </div>
-      </Desktop>
+      </Large>
     </Content>
   );
 };

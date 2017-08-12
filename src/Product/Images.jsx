@@ -2,9 +2,8 @@ import React from "react";
 import styled from "styled-components";
 
 const Content = styled.div`
-  margin-left: -.5rem;
-  margin-right: -.5rem;
-
+  margin-left: -1rem;
+  margin-right: -1rem;
   display: flex;
   overflow-x: scroll;
   @media only screen and (min-width: 48rem) {
@@ -28,8 +27,10 @@ const Image = styled.img`
 `;
 
 const DesktopImage = styled.img`
-  display: block;
   width: 100%;
+  @media only screen and (max-width: 62rem) {
+    display: none;
+  }
 `;
 
 function Images() {

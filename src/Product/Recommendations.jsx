@@ -13,14 +13,13 @@ const Title = styled.h2`
   font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
   font-weight: 500;
   font-size: 1rem;
-  border-bottom: 1px solid #171717;
   @media screen and (min-width: 48rem) {
     margin-bottom: 1rem;
   }
 `;
 
 const Recommendations = styled.section`
-  padding: 2rem 1rem 3rem 1rem;
+  padding: 2rem .5rem 3rem .5rem;
   @media screen and (min-width: 48rem) {
     padding-right: .5rem;
     padding-bottom: 2rem;
