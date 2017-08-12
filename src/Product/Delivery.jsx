@@ -9,6 +9,10 @@ const Content = styled.section`
   @media only screen and (min-width: 48rem) {
     display: block;
   }
+  @media screen and (min-width: 62rem) {
+    align-items: center;
+    margin-top: 2.5rem;
+  }
 `;
 
 const Image = styled.img`
@@ -59,7 +63,7 @@ const Text = styled.p`
   color: #171717;
 `;
 
-export default function() {
+export default () => {
   return (
     <Content>
       <div className="row">
@@ -95,4 +99,4 @@ export default function() {
       </div>
     </Content>
   );
-}
+};
