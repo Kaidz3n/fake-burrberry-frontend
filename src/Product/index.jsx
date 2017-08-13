@@ -7,7 +7,7 @@ import Description from "./Description";
 import Delivery from "./Delivery";
 import ShippingDescription from "./ShippingDescription";
 import Recommendations from "./Recommendations";
-import { Medium, Large } from "../Common/responsive";
+import { XS_MD, LG } from "../Common/responsive";
 import GalleryImages from "./GalleryImages";
 
 const Content = styled.section`
@@ -51,7 +51,7 @@ export default () => {
         <title>Long Cotton Gabardine Car Coat | Men - Burberry</title>
       </Helmet>
 
-      <Medium>
+      <XS_MD>
         <section className="container">
           <div className="row">
             <div className="col-xs-12">
@@ -59,8 +59,8 @@ export default () => {
             </div>
           </div>
         </section>
-      </Medium>
-      <Medium>
+      </XS_MD>
+      <XS_MD>
         <section className="container">
           <div className="row">
             <div className="col-xs-12 col-md-7">
@@ -71,9 +71,9 @@ export default () => {
             </div>
           </div>
         </section>
-      </Medium>
+      </XS_MD>
 
-      <Large>
+      <LG>
         <Content>
           <div className="container">
             <div className="row">
@@ -91,7 +91,7 @@ export default () => {
             </div>
           </div>
         </Content>
-      </Large>
+      </LG>
 
       <section className="container">
         <div className="row">
@@ -124,17 +124,17 @@ export default () => {
               </ul>
             </Description>
           </div>
-          <Large>
+          <LG>
             <div className="col-lg-8">
               <Image src="img/desktop2.jpg" alt="product-image" />
             </div>
-          </Large>
+          </LG>
         </div>
-        <Large>
+        <LG>
           <div className="row">
             <GalleryImages />
           </div>
-        </Large>
+        </LG>
 
         <ShippingDescription />
         <Delivery />

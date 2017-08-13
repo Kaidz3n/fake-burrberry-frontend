@@ -4,7 +4,7 @@ import Button from "../Common/Button";
 import ColorButton from "./ColorButton";
 import HelpButton from "./HelpButton";
 import NumberFormat from "react-number-format";
-import { Medium, Large } from "../Common/responsive";
+import { XS_MD, LG } from "../Common/responsive";
 import SizeButton from "./SizeButton";
 
 const Content = styled.section`
@@ -122,7 +122,7 @@ const Text = styled.p`
 export default () => {
   return (
     <Content>
-      <Medium>
+      <XS_MD>
         <PriceId>
           <Price>
             <NumberFormat
@@ -147,9 +147,9 @@ export default () => {
           <Button type="button">Find in store</Button>
           <HelpButton type="button">Need size help?</HelpButton>
         </ButtonContainer>
-      </Medium>
+      </XS_MD>
 
-      <Large>
+      <LG>
         <div className="row">
           <div className="col-lg-12">
             <Price>
@@ -205,7 +205,7 @@ export default () => {
             </Text>
           </div>
         </div>
-      </Large>
+      </LG>
     </Content>
   );
 };
