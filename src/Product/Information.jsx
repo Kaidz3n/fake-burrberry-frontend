@@ -2,10 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import Button from "../Common/Button";
 import ColorButton from "./ColorButton";
-import HelpButton from "./HelpButton";
+import SecondaryButton from "./SecondaryButton";
 import NumberFormat from "react-number-format";
 import { XS_MD, LG } from "../Common/responsive";
-import SizeButton from "./SizeButton";
+import TextButton from "./TextButton";
 
 const Content = styled.section`
   font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -145,7 +145,7 @@ export default () => {
             Select a size
           </Button>
           <Button type="button">Find in store</Button>
-          <HelpButton type="button">Need size help?</HelpButton>
+          <SecondaryButton type="button">Need size help?</SecondaryButton>
         </ButtonContainer>
       </XS_MD>
 
@@ -175,13 +175,13 @@ export default () => {
               <Size>
                 Size: <b>XL</b>
               </Size>
-              <HelpButton type="button">Need size help?</HelpButton>
+              <SecondaryButton type="button">Need size help?</SecondaryButton>
             </Wrapper>
             <ButtonContainer>
-              <SizeButton>S</SizeButton>
-              <SizeButton>M</SizeButton>
-              <SizeButton>L</SizeButton>
-              <SizeButton>XL</SizeButton>
+              <TextButton>S</TextButton>
+              <TextButton>M</TextButton>
+              <TextButton>L</TextButton>
+              <TextButton>XL</TextButton>
             </ButtonContainer>
           </div>
         </div>

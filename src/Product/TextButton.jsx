@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const SizeButton = styled.button`
+const TextButton = styled.button`
   margin-right: .5rem;
   padding: .5rem 1rem;
   font-size: .75rem;
@@ -14,8 +14,8 @@ const SizeButton = styled.button`
 
 export default props => {
   return (
-    <SizeButton type="button">
+    <TextButton type="button">
       {props.children}
-    </SizeButton>
+    </TextButton>
   );
 };
