@@ -3,7 +3,6 @@ import styled from "styled-components";
 
 const Content = styled.section`
   margin-left: -1rem;
-  margin-right: 0;
   margin-right: .5rem;
   display: none;
   @media only screen and (min-width: 48rem) {
@@ -63,7 +62,7 @@ const Text = styled.p`
   color: #171717;
 `;
 
-export default function() {
+export default () => {
   return (
     <Content>
       <div className="row">
@@ -99,4 +98,4 @@ export default function() {
       </div>
     </Content>
   );
-}
+};

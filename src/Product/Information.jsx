@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import Button from "../Common/Button.jsx";
-import ColorButton from "./ColorButton.jsx";
-import HelpButton from "./HelpButton.jsx";
+import Button from "../Common/Button";
+import ColorButton from "./ColorButton";
+import HelpButton from "./HelpButton";
 import NumberFormat from "react-number-format";
 import { Medium, Large } from "../Common/responsive";
-import SizeButton from "./SizeButton.jsx";
+import SizeButton from "./SizeButton";
 
 const Content = styled.section`
   font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -119,7 +119,7 @@ const Text = styled.p`
   font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
 `;
 
-export default function() {
+export default () => {
   return (
     <Content>
       <Medium>
@@ -208,4 +208,4 @@ export default function() {
       </Large>
     </Content>
   );
-}
+};

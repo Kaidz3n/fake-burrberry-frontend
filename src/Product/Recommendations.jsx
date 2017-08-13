@@ -42,7 +42,7 @@ const Link = styled.a`
   text-decoration: none;
 `;
 
-export default function() {
+export default () => {
   return (
     <Recommendations>
       <Title>WE RECOMMEND</Title>
@@ -98,4 +98,4 @@ export default function() {
       </More>
     </Recommendations>
   );
-}
+};

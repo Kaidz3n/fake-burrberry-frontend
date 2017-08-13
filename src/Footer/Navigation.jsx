@@ -32,7 +32,7 @@ const Title = styled.h3`
   text-transform: uppercase;
 `;
 
-export default function() {
+export default () => {
   return (
     <Navigation>
       <div className="row">
@@ -72,4 +72,4 @@ export default function() {
       </div>
     </Navigation>
   );
-}
+};

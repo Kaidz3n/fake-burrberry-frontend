@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { Helmet } from "react-helmet";
 import styled from "styled-components";
 import Images from "./Images";
@@ -44,7 +44,7 @@ const Image = styled.img`
   margin-left: -.5rem;
 `;
 
-export default function() {
+export default () => {
   return (
     <main className="container">
       <Helmet>
@@ -145,4 +145,4 @@ export default function() {
       </section>
     </main>
   );
-}
+};

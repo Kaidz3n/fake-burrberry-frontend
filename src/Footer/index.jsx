@@ -65,7 +65,7 @@ const Link = styled.a`
   }
 `;
 
-export default function() {
+export default () => {
   return (
     <Footer>
       <div className="container">
@@ -77,4 +77,4 @@ export default function() {
       </div>
     </Footer>
   );
-}
+};

@@ -50,7 +50,7 @@ const Price = styled.h5`
   color: #999999;
 `;
 
-export default function(props) {
+export default props => {
   return (
     <Card>
       <Image alt="" src={props.image} />
@@ -70,4 +70,4 @@ export default function(props) {
       </Price>
     </Card>
   );
-}
+};

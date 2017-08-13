@@ -17,15 +17,13 @@ const Header = styled.header`
 const Logo = styled.img`
   margin: auto;
   display: block;
-  width: 138px;
-  height: 10px;
+  height: .625rem;
   @media screen and (min-width: 62rem) {
-    width: 100%;
-    height: 16px;
+    height: 1rem;
   }
 `;
 
-export default function() {
+export default () => {
   return (
     <Header>
       <a href="https://ru.burberry.com/">
@@ -33,4 +31,4 @@ export default function() {
       </a>
     </Header>
   );
-}
+};

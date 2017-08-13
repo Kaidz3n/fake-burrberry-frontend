@@ -25,7 +25,7 @@ const Image = styled.img`
   width: 100%;
 `;
 
-export default function() {
+export default () => {
   return (
     <Content>
       <div className="col-lg-4">
@@ -39,4 +39,4 @@ export default function() {
       </div>
     </Content>
   );
-}
+};

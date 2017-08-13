@@ -34,7 +34,7 @@ const DesktopImage = styled.img`
   }
 `;
 
-export default function() {
+export default () => {
   return (
     <Content>
       <Image
@@ -60,4 +60,4 @@ export default function() {
       <DesktopImage src="img/desktop1.jpg" alt="product-image" />
     </Content>
   );
-}
+};
