@@ -81,6 +81,9 @@ const Title = styled.h2`
     margin-left: 0;
     margin-bottom: 1rem;
   }
+  @media screen and (min-width: 62rem) {
+    display: none;
+  }
 `;
 
 class ShippingDescription extends Component {

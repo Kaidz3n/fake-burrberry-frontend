@@ -10,7 +10,7 @@ const Content = styled.section`
   }
   @media screen and (min-width: 62rem) {
     align-items: center;
-    margin-top: 2.5rem;
+    margin-top: -1rem;
   }
 `;
 
