@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
 const Content = styled.div`
   margin-left: -1rem;
@@ -34,30 +34,28 @@ const DesktopImage = styled.img`
   }
 `;
 
-export default () => {
-  return (
-    <Content>
-      <Image
-        src="img/bitmap.jpg"
-        srcset="img/bitmap@2x.jpg 2x, img/bitmap@3x.jpg 3x"
-        alt="product-image"
-      />
-      <Image
-        src="img/bitmap2.jpg"
-        srcset="img/bitmap2@2x.jpg 2x, img/bitmap2@3x.jpg 3x"
-        alt="product-image"
-      />
-      <Image
-        src="img/bitmap3.jpg"
-        srcset="img/bitmap3@2x.jpg 2x, img/bitmap3@3x.jpg 3x"
-        alt="product-image"
-      />
-      <Image
-        src="img/bitmap4.jpg"
-        srcset="img/bitmap4@2x.jpg 2x, img/bitmap4@3x.jpg 3x"
-        alt="product-image"
-      />
-      <DesktopImage src="img/desktop1.jpg" alt="product-image" />
-    </Content>
-  );
-};
+export default () => (
+  <Content>
+    <Image
+      src="img/bitmap.jpg"
+      srcset="img/bitmap@2x.jpg 2x, img/bitmap@3x.jpg 3x"
+      alt="product-image"
+    />
+    <Image
+      src="img/bitmap2.jpg"
+      srcset="img/bitmap2@2x.jpg 2x, img/bitmap2@3x.jpg 3x"
+      alt="product-image"
+    />
+    <Image
+      src="img/bitmap3.jpg"
+      srcset="img/bitmap3@2x.jpg 2x, img/bitmap3@3x.jpg 3x"
+      alt="product-image"
+    />
+    <Image
+      src="img/bitmap4.jpg"
+      srcset="img/bitmap4@2x.jpg 2x, img/bitmap4@3x.jpg 3x"
+      alt="product-image"
+    />
+    <DesktopImage src="img/desktop1.jpg" alt="product-image" />
+  </Content>
+);
