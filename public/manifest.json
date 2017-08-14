@@ -1,0 +1,15 @@
+{
+  "short_name": "Burberry",
+  "name": "Burberry Shop",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "20x20",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
