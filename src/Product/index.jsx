@@ -136,8 +136,9 @@ export default () => {
           </div>
         </LG>
 
-        <ShippingDescription />
-        <Delivery />
+        <ShippingDescription>
+          <Delivery />
+        </ShippingDescription>
 
         <section className="row">
           <Recommendations />

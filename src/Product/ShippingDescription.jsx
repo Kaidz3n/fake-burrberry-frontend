@@ -80,8 +80,6 @@ const Title = styled.h2`
   @media screen and (min-width: 48rem) {
     margin-left: 0;
     margin-bottom: 1rem;
-  }
-  @media screen and (min-width: 62rem) {
     display: none;
   }
 `;
