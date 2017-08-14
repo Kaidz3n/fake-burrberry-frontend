@@ -1,24 +1,20 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import styled from "styled-components";
+import MediaQuery from "react-responsive";
+import breakpoints from "../Common/breakpoints";
 import Images from "./Images";
 import Information from "./Information";
 import Description from "./Description";
 import Delivery from "./Delivery";
 import ShippingDescription from "./ShippingDescription";
 import Recommendations from "./Recommendations";
-import { XS_MD, LG } from "../Common/responsive";
 import GalleryImages from "./GalleryImages";
 
-const Content = styled.section`
-  width: 100%;
-  background: #d4bdad;
-`;
-
-const Wrapper = styled.div`
-  display: flex;
-  flex-basis: 100%;
-  align-items: center;
+const Background = styled.div`
+  @media screen and (min-width: 62rem) {
+    background-color: #d4bdad;
+  }
 `;
 
 const Title = styled.h1`
@@ -30,18 +26,27 @@ const Title = styled.h1`
   font-weight: 400;
   line-height: 1.5rem;
   color: #111;
-  @media only screen and (min-width: 48rem) {
-    padding: 1.5rem .5rem;
+  @media screen and (min-width: 48rem) {
+    margin-left: -1.5rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
     font-size: 1.5rem;
-    line-height: 1.75rem;
+  }
+  @media screen and (min-width: 62rem) {
+    margin: 0;
+    margin-bottom: .5rem;
+    font-size: 1.5rem;
   }
 `;
 
 const Image = styled.img`
-  width: 100%;
-  display: block;
   margin-top: 4rem;
   margin-left: -.5rem;
+  display: none;
+  width: 100%;
+  @media screen and (min-width: 62rem) {
+    display: block;
+  }
 `;
 
 export default () => {
@@ -51,47 +56,21 @@ export default () => {
         <title>Long Cotton Gabardine Car Coat | Men - Burberry</title>
       </Helmet>
 
-      <XS_MD>
+      <Background>
         <section className="container">
-          <div className="row">
-            <div className="col-xs-12">
-              <Title>Long Cotton Gabardine Car Coat</Title>
-            </div>
-          </div>
-        </section>
-      </XS_MD>
-      <XS_MD>
-        <section className="container">
-          <div className="row">
-            <div className="col-xs-12 col-md-7">
+          <MediaQuery maxDeviceWidth={breakpoints.lg - 1}>
+            <Title>Long Cotton Gabardine Car Coat</Title>
+          </MediaQuery>
+          <div className="row middle-lg">
+            <div className="col-xs-12 col-md-7 col-lg-6">
               <Images />
             </div>
-            <div className="col-xs-12 col-md-5">
+            <div className="col-xs-12 col-md-5 col-lg-6">
               <Information />
             </div>
           </div>
         </section>
-      </XS_MD>
-
-      <LG>
-        <Content>
-          <div className="container">
-            <div className="row">
-              <Wrapper>
-                <div className="col-lg-6">
-                  <Images />
-                </div>
-                <div className="col-xs-12 col-md-5 col-lg-6">
-                  <Title>
-                    Long Cotton Gabardine Car Coat Coat Coat Coat Coat
-                  </Title>
-                  <Information />
-                </div>
-              </Wrapper>
-            </div>
-          </div>
-        </Content>
-      </LG>
+      </Background>
 
       <section className="container">
         <div className="row">
@@ -124,22 +103,24 @@ export default () => {
               </ul>
             </Description>
           </div>
-          <LG>
-            <div className="col-lg-8">
-              <Image src="img/desktop2.jpg" alt="product-image" />
-            </div>
-          </LG>
+
+          <div className="col-lg-8">
+            <Image
+              src="img/desktop2.jpg"
+              alt="Long Cotton Gabardine Car Coat"
+            />
+          </div>
         </div>
-        <LG>
+
+        <MediaQuery minDeviceWidth={breakpoints.lg}>
           <div className="row">
             <GalleryImages />
           </div>
-        </LG>
+        </MediaQuery>
 
         <ShippingDescription>
           <Delivery />
         </ShippingDescription>
-
         <section className="row">
           <Recommendations />
         </section>

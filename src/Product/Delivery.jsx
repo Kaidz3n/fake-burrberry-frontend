@@ -2,12 +2,12 @@ import React from "react";
 import styled from "styled-components";
 
 const Content = styled.div`
+  margin-right: -.5rem;
+  margin-left: -.5rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   box-sizing: border-box;
-  margin-right: -.5rem;
-  margin-left: -.5rem;
   @media screen and (min-width: 62rem) {
     align-items: center;
     margin-top: -1rem;

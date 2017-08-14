@@ -1,10 +1,12 @@
 import React from "react";
 import styled from "styled-components";
+import MediaQuery from "react-responsive";
 import Button from "../Common/Button";
+import breakpoints from "../Common/breakpoints";
 import ColorButton from "./ColorButton";
-import SecondaryButton from "./SecondaryButton";
-import NumberFormat from "react-number-format";
-import { XS_MD, LG } from "../Common/responsive";
+import PriceId from "./PriceId";
+import Actions from "./Actions";
+import Size from "./Size";
 import TextButton from "./TextButton";
 
 const Content = styled.section`
@@ -18,97 +20,62 @@ const Content = styled.section`
     margin-right: 1rem;
   }
 `;
-
-const PriceId = styled.div`
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  }
-  @media screen and (min-width: 62rem) {
-    margin-bottom: 3rem;
-  }
-`;
-
-const Price = styled.h2`
-  margin: 0;
+const Title = styled.h1`
+  margin: 1rem .5rem;
+  margin-left: .5rem;
+  padding: 0;
+  font-size: 1.25rem;
+  line-height: 1.2;
   font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.1875rem;
-  color: #111;
-  @media screen and (min-width: 62rem) {
-    margin-bottom: 2rem;
-  }
-`;
-
-const Id = styled.p`
-  margin: 0;
-  font-size: .75rem;
-  line-height: 1rem;
-  color: #171717;
-  @media screen and (min-width: 62rem) {
-    margin-top: .5rem;
+  @media screen and (min-width: 48rem) {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
     margin-bottom: 1.5rem;
+    margin-left: 0;
+  }
+  @media screen and (min-width: 62rem) {
+    font-size: 1.5rem;
+    margin: 0;
+    margin-bottom: .5rem;
   }
 `;
 
 const Color = styled.p`
   margin: 0;
+  margin-top: 1rem;
+  margin-left: .5rem;
   font-size: .75rem;
   line-height: 1rem;
-  @media screen and (min-width: 62rem) {
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+  @media screen and (min-width: 48rem) {
+    margin-top: 0;
   }
-`;
-
-const ButtonColorContainer = styled.div`
-  margin: 1rem 0 2rem 0;
-  display: flex;
-  flex-wrap: wrap;
-`;
-
-const ButtonContainer = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  margin: 1rem 0;
   @media screen and (min-width: 62rem) {
     margin: 0;
   }
 `;
 
+const ButtonColorContainer = styled.div`
+  margin-top: 1rem;
+  @media screen and (min-width: 62rem) {
+    margin: 0;
+    margin-bottom: .5rem;
+  }
+`;
+
 const Hr = styled.hr`
-  margin: 0;
-  border-top: none;
-  border-bottom: solid 1px #c6c6c6;
-`;
-
-const Actions = ButtonContainer.extend`
+  margin-top: 2rem;
+  border: none;
+  border-bottom: 1px solid #c6c6c6;
   @media screen and (min-width: 62rem) {
-    margin-top: .5rem;
-    margin-bottom: 1.5rem;
+    display: none;
   }
-`;
-
-const Wrapper = PriceId.extend`
-  @media screen and (min-width: 62rem) {
-    margin-bottom: 0;
-  }
-`;
-
-const Size = styled.p`
-  margin: 1rem 0;
-  font-size: 0.75rem;
-  line-height: 1rem;
 `;
 
 const Caption = styled.h3`
-  margin: 0;
+  margin-top: 1.5rem;
   margin-bottom: .25rem;
   line-height: .875rem;
   font-size: .75rem;
-  font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
   font-weight: bold;
 `;
 
@@ -116,96 +83,51 @@ const Text = styled.p`
   margin: 0;
   line-height: 1.35;
   font-size: .75rem;
-  font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
 `;
 
 export default () => {
   return (
     <Content>
-      <XS_MD>
-        <PriceId>
-          <Price>
-            <NumberFormat
-              value={110000}
-              displayType="text"
-              thousandSeparator=" "
-              suffix=" руб."
-            />
-          </Price>
-          <Id>Item 39428531</Id>
-        </PriceId>
-        <Color>Colour: Honey</Color>
-        <ButtonColorContainer>
-          <ColorButton name="black" value="#232122" type="button" />
-          <ColorButton name="honey" value="#cfa880" type="button" active />
-        </ButtonColorContainer>
-        <Hr />
-        <ButtonContainer>
-          <Button primary type="button">
-            Select a size
-          </Button>
-          <Button type="button">Find in store</Button>
-          <SecondaryButton type="button">Need size help?</SecondaryButton>
-        </ButtonContainer>
-      </XS_MD>
-
-      <LG>
-        <div className="row">
-          <div className="col-lg-12">
-            <Price>
-              <NumberFormat
-                value={110000}
-                displayType="text"
-                thousandSeparator=" "
-                suffix=" руб."
-              />
-            </Price>
-          </div>
-          <div className="col-lg-6">
-            <Color>
-              Colour: <b>Honey</b>
-            </Color>
-            <ButtonContainer>
-              <ColorButton name="black" value="#232122" type="button" />
-              <ColorButton name="honey" value="#cfa880" type="button" active />
-            </ButtonContainer>
-          </div>
-          <div className="col-lg-6">
-            <Wrapper>
-              <Size>
-                Size: <b>XL</b>
-              </Size>
-              <SecondaryButton type="button">Need size help?</SecondaryButton>
-            </Wrapper>
-            <ButtonContainer>
-              <TextButton>S</TextButton>
-              <TextButton>M</TextButton>
-              <TextButton>L</TextButton>
-              <TextButton>XL</TextButton>
-            </ButtonContainer>
-          </div>
+      <MediaQuery minDeviceWidth={breakpoints.lg - 1}>
+        <Title>Long Cotton Gabardine Car Coat Coat Coat Coat Coat</Title>
+      </MediaQuery>
+      <PriceId />
+      <div className="row">
+        <div className="col-lg-6">
+          <Color>
+            Colour: <b>Honey</b>
+          </Color>
         </div>
-        <div className="row">
+        <MediaQuery minDeviceWidth={breakpoints.lg - 1}>
           <div className="col-lg-6">
-            <Actions>
-              <Button primary type="button">
-                Add to bag
-              </Button>
-            </Actions>
+            <Size />
           </div>
-          <div className="col-lg-6">
-            <Actions>
-              <Button type="button">Find in store</Button>
-            </Actions>
-          </div>
-          <div className="col-lg-12">
-            <Caption>Free Next Day Delivery</Caption>
-            <Text>
-              Order before 7pm Monday to Thursday for delivery the next day
-            </Text>
-          </div>
+        </MediaQuery>
+      </div>
+      <div className="row">
+        <div className="col-xs-12 col-lg-6">
+          <ButtonColorContainer>
+            <ColorButton name="black" value="#232122" type="button" />
+            <ColorButton name="honey" value="#cfa880" type="button" active />
+          </ButtonColorContainer>
+          <Hr />
         </div>
-      </LG>
+        <MediaQuery minDeviceWidth={breakpoints.lg - 1}>
+          <div className="col-lg-6">
+            <TextButton>S</TextButton>
+            <TextButton>M</TextButton>
+            <TextButton>L</TextButton>
+            <TextButton>XL</TextButton>
+          </div>
+        </MediaQuery>
+      </div>
+      <Actions />
+      <MediaQuery minDeviceWidth={breakpoints.lg - 1}>
+        <Caption>Free Next Day Delivery</Caption>
+        <Text>
+          Order before 7pm Monday to Thursday for delivery the next Day
+        </Text>
+      </MediaQuery>
     </Content>
   );
 };
