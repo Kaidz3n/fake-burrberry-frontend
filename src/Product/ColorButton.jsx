@@ -11,11 +11,11 @@ const Button = styled.button`
   background-color: ${props => props.color};
 `;
 
-export default function ColorButtonExport(props) {
+export default function Export(props) {
   return <Button color={props.value} active={props.active} type="button" />;
 }
 
-ColorButtonExport.propTypes = {
+Export.propTypes = {
   value: PropTypes.string.isRequired,
   active: PropTypes.string.isRequired,
 };

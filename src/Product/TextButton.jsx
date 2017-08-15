@@ -13,7 +13,7 @@ const TextButton = styled.button`
   background: transparent;
 `;
 
-export default function TextButtonExport(props) {
+export default function Export(props) {
   return (
     <TextButton type="button">
       {props.children}
@@ -21,6 +21,6 @@ export default function TextButtonExport(props) {
   );
 }
 
-TextButtonExport.propTypes = {
+Export.propTypes = {
   children: PropTypes.string.isRequired,
 };

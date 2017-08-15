@@ -51,7 +51,7 @@ const Price = styled.h5`
   color: #999999;
 `;
 
-export default function CardExport(props) {
+export default function Export(props) {
   return (
     <Card>
       <Image alt="" src={props.image} />
@@ -68,7 +68,7 @@ export default function CardExport(props) {
   );
 }
 
-CardExport.propTypes = {
+Export.propTypes = {
   image: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   fullname: PropTypes.string.isRequired,
