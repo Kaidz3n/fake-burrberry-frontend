@@ -1,9 +1,10 @@
-import React, { Component } from "react";
-import styled from "styled-components";
-import triangleIcon from "../assets/triangle.svg";
+import React, { Component } from 'react';
+import styled from 'styled-components';
+import PropTypes from 'prop-types';
+import triangleIcon from '../assets/triangle.svg';
 
 const Content = styled.div`
-  display: ${props => (props.active ? `block` : "none")};
+  display: ${props => (props.active ? 'block' : 'none')};
   margin-top: 2rem;
   margin-left: -1rem;
   font-size: .875rem;
@@ -49,7 +50,7 @@ const Container = styled.section`
     position: absolute;
     content: url(${triangleIcon});
     right: 1rem;
-    ${props => (props.active ? "transform: rotate(180deg);" : "")};
+    ${props => (props.active ? 'transform: rotate(180deg);' : '')};
   }
   @media screen and (min-width: 48rem) {
     ::after {
@@ -88,14 +89,14 @@ class ShippingDescription extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      active: false
+      active: false,
     };
     this.toggle = this.toggle.bind(this);
   }
 
   toggle() {
-    this.setState((state, props) => ({
-      active: !state.active
+    this.setState(state => ({
+      active: !state.active,
     }));
   }
 
@@ -112,5 +113,9 @@ class ShippingDescription extends Component {
     );
   }
 }
+
+ShippingDescription.propTypes = {
+  children: PropTypes.string.isRequired,
+};
 
 export default ShippingDescription;

@@ -1,8 +1,8 @@
-import React from "react";
-import styled from "styled-components";
-import MediaQuery from "react-responsive";
-import Button from "../Common/Button";
-import breakpoints from "../Common/breakpoints";
+import React from 'react';
+import styled from 'styled-components';
+import MediaQuery from 'react-responsive';
+import Button from '../Common/Button';
+import breakpoints from '../Common/breakpoints';
 
 const Content = styled.div`
   display: flex;
@@ -32,36 +32,33 @@ const TextButton = Button.extend`
   }
 `;
 
-export default () => {
-  return (
-    <div>
-      <MediaQuery maxDeviceWidth={breakpoints.lg - 1}>
-        <Content>
-          <Button primary type="button">
-            Select a size
-          </Button>
-          <Button type="button">Find in store</Button>
-        </Content>
-      </MediaQuery>
-      <MediaQuery minDeviceWidth={breakpoints.lg}>
-        <div className="row">
-          <div className="col-lg-6">
-            <Content>
-              <Button primary type="button">
-                Add to bag
-              </Button>
-            </Content>
-          </div>
-          <div className="col-lg-6">
-            <Content>
-              <Button type="button">Find in store</Button>
-            </Content>
-          </div>
+export default () =>
+  (<div>
+    <MediaQuery maxDeviceWidth={breakpoints.lg - 1}>
+      <Content>
+        <Button primary type="button">
+          Select a size
+        </Button>
+        <Button type="button">Find in store</Button>
+      </Content>
+    </MediaQuery>
+    <MediaQuery minDeviceWidth={breakpoints.lg}>
+      <div className="row">
+        <div className="col-lg-6">
+          <Content>
+            <Button primary type="button">
+              Add to bag
+            </Button>
+          </Content>
         </div>
-      </MediaQuery>
-      <MediaQuery maxDeviceWidth={breakpoints.lg - 1}>
-        <TextButton type="button">Need size help?</TextButton>
-      </MediaQuery>
-    </div>
-  );
-};
+        <div className="col-lg-6">
+          <Content>
+            <Button type="button">Find in store</Button>
+          </Content>
+        </div>
+      </div>
+    </MediaQuery>
+    <MediaQuery maxDeviceWidth={breakpoints.lg - 1}>
+      <TextButton type="button">Need size help?</TextButton>
+    </MediaQuery>
+  </div>);

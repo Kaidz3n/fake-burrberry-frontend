@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
 const Content = styled.div`
   margin-left: -.5rem;
@@ -25,18 +25,15 @@ const Image = styled.img`
   width: 100%;
 `;
 
-export default () => {
-  return (
-    <Content>
-      <div className="col-lg-4">
-        <Image src="img/bitmap3.jpg" alt="product-image" />
-      </div>
-      <div className="col-lg-4">
-        <Image src="img/bitmap4.jpg" alt="product-image" />
-      </div>
-      <div className="col-lg-4">
-        <Image src="img/desktop3.jpg" alt="product-image" />
-      </div>
-    </Content>
-  );
-};
+export default () =>
+  (<Content>
+    <div className="col-lg-4">
+      <Image src="img/bitmap3.jpg" alt="product-image" />
+    </div>
+    <div className="col-lg-4">
+      <Image src="img/bitmap4.jpg" alt="product-image" />
+    </div>
+    <div className="col-lg-4">
+      <Image src="img/desktop3.jpg" alt="product-image" />
+    </div>
+  </Content>);

@@ -1,13 +1,12 @@
-import React from "react";
-import styled from "styled-components";
-import MediaQuery from "react-responsive";
-import Button from "../Common/Button";
-import breakpoints from "../Common/breakpoints";
-import ColorButton from "./ColorButton";
-import PriceId from "./PriceId";
-import Actions from "./Actions";
-import Size from "./Size";
-import TextButton from "./TextButton";
+import React from 'react';
+import styled from 'styled-components';
+import MediaQuery from 'react-responsive';
+import breakpoints from '../Common/breakpoints';
+import ColorButton from './ColorButton';
+import PriceId from './PriceId';
+import Actions from './Actions';
+import Size from './Size';
+import TextButton from './TextButton';
 
 const Content = styled.section`
   font-family: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -85,49 +84,44 @@ const Text = styled.p`
   font-size: .75rem;
 `;
 
-export default () => {
-  return (
-    <Content>
+export default () =>
+  (<Content>
+    <MediaQuery minDeviceWidth={breakpoints.lg - 1}>
+      <Title>Long Cotton Gabardine Car Coat Coat Coat Coat Coat</Title>
+    </MediaQuery>
+    <PriceId />
+    <div className="row">
+      <div className="col-lg-6">
+        <Color>
+          Colour: <b>Honey</b>
+        </Color>
+      </div>
       <MediaQuery minDeviceWidth={breakpoints.lg - 1}>
-        <Title>Long Cotton Gabardine Car Coat Coat Coat Coat Coat</Title>
-      </MediaQuery>
-      <PriceId />
-      <div className="row">
         <div className="col-lg-6">
-          <Color>
-            Colour: <b>Honey</b>
-          </Color>
+          <Size />
         </div>
-        <MediaQuery minDeviceWidth={breakpoints.lg - 1}>
-          <div className="col-lg-6">
-            <Size />
-          </div>
-        </MediaQuery>
-      </div>
-      <div className="row">
-        <div className="col-xs-12 col-lg-6">
-          <ButtonColorContainer>
-            <ColorButton name="black" value="#232122" type="button" />
-            <ColorButton name="honey" value="#cfa880" type="button" active />
-          </ButtonColorContainer>
-          <Hr />
-        </div>
-        <MediaQuery minDeviceWidth={breakpoints.lg - 1}>
-          <div className="col-lg-6">
-            <TextButton>S</TextButton>
-            <TextButton>M</TextButton>
-            <TextButton>L</TextButton>
-            <TextButton>XL</TextButton>
-          </div>
-        </MediaQuery>
-      </div>
-      <Actions />
-      <MediaQuery minDeviceWidth={breakpoints.lg - 1}>
-        <Caption>Free Next Day Delivery</Caption>
-        <Text>
-          Order before 7pm Monday to Thursday for delivery the next Day
-        </Text>
       </MediaQuery>
-    </Content>
-  );
-};
+    </div>
+    <div className="row">
+      <div className="col-xs-12 col-lg-6">
+        <ButtonColorContainer>
+          <ColorButton name="black" value="#232122" type="button" />
+          <ColorButton name="honey" value="#cfa880" type="button" active />
+        </ButtonColorContainer>
+        <Hr />
+      </div>
+      <MediaQuery minDeviceWidth={breakpoints.lg - 1}>
+        <div className="col-lg-6">
+          <TextButton>S</TextButton>
+          <TextButton>M</TextButton>
+          <TextButton>L</TextButton>
+          <TextButton>XL</TextButton>
+        </div>
+      </MediaQuery>
+    </div>
+    <Actions />
+    <MediaQuery minDeviceWidth={breakpoints.lg - 1}>
+      <Caption>Free Next Day Delivery</Caption>
+      <Text>Order before 7pm Monday to Thursday for delivery the next Day</Text>
+    </MediaQuery>
+  </Content>);
