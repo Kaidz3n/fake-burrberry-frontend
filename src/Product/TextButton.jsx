@@ -1,5 +1,6 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 const TextButton = styled.button`
   margin-right: .5rem;
@@ -12,10 +13,14 @@ const TextButton = styled.button`
   background: transparent;
 `;
 
-export default props => {
+export default function TextButtonExport(props) {
   return (
     <TextButton type="button">
       {props.children}
     </TextButton>
   );
+}
+
+TextButtonExport.propTypes = {
+  children: PropTypes.string.isRequired,
 };

@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
 const Navigation = styled.div`
   display: none;
@@ -32,44 +32,41 @@ const Title = styled.h3`
   text-transform: uppercase;
 `;
 
-export default () => {
-  return (
-    <Navigation>
-      <div className="row">
-        <div className="col-md-3">
-          <Title>Customer Service</Title>
-          <nav>
-            <Link href="#">Contact us</Link>
-            <Link href="#">Payment</Link>
-            <Link href="#">Shipping</Link>
-            <Link href="#">Returns</Link>
-            <Link href="#">Faqs</Link>
-            <Link href="#">Live Chat</Link>
-            <Link href="#">The Burberry App</Link>
-            <Link href="#">Store Locator</Link>
-          </nav>
-        </div>
-        <div className="col-md-3">
-          <Title>Our Company</Title>
-          <nav>
-            <Link href="#">Our History</Link>
-            <Link href="#">Burberry Group Pic</Link>
-            <Link href="#">Careers</Link>
-            <Link href="#">Corporate Responsibility</Link>
-            <Link href="#">Site Map</Link>
-          </nav>
-        </div>
-        <div className="col-md-3">
-          <Title>Legal & Cookies</Title>
-          <nav>
-            <Link href="#">Terms & Conditions</Link>
-            <Link href="#">Privacy Policy</Link>
-            <Link href="#">Cookie Policy</Link>
-            <Link href="#">Accessibility Statement</Link>
-            <Link href="#">Japan Only - SCTL indications</Link>
-          </nav>
-        </div>
+export default () =>
+  (<Navigation>
+    <div className="row">
+      <div className="col-md-3">
+        <Title>Customer Service</Title>
+        <nav>
+          <Link href="#">Contact us</Link>
+          <Link href="#">Payment</Link>
+          <Link href="#">Shipping</Link>
+          <Link href="#">Returns</Link>
+          <Link href="#">Faqs</Link>
+          <Link href="#">Live Chat</Link>
+          <Link href="#">The Burberry App</Link>
+          <Link href="#">Store Locator</Link>
+        </nav>
       </div>
-    </Navigation>
-  );
-};
+      <div className="col-md-3">
+        <Title>Our Company</Title>
+        <nav>
+          <Link href="#">Our History</Link>
+          <Link href="#">Burberry Group Pic</Link>
+          <Link href="#">Careers</Link>
+          <Link href="#">Corporate Responsibility</Link>
+          <Link href="#">Site Map</Link>
+        </nav>
+      </div>
+      <div className="col-md-3">
+        <Title>Legal & Cookies</Title>
+        <nav>
+          <Link href="#">Terms & Conditions</Link>
+          <Link href="#">Privacy Policy</Link>
+          <Link href="#">Cookie Policy</Link>
+          <Link href="#">Accessibility Statement</Link>
+          <Link href="#">Japan Only - SCTL indications</Link>
+        </nav>
+      </div>
+    </div>
+  </Navigation>);

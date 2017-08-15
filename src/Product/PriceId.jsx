@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "styled-components";
-import NumberFormat from "react-number-format";
+import React from 'react';
+import styled from 'styled-components';
+import NumberFormat from 'react-number-format';
 
 const Content = styled.div`
   margin-top: 1rem;
@@ -39,18 +39,10 @@ const Id = styled.p`
   }
 `;
 
-export default props => {
-  return (
-    <Content>
-      <Price>
-        <NumberFormat
-          value={110000}
-          displayType="text"
-          thousandSeparator=" "
-          suffix=" руб."
-        />
-      </Price>
-      <Id>Item 39428531</Id>
-    </Content>
-  );
-};
+export default () =>
+  (<Content>
+    <Price>
+      <NumberFormat value={110000} displayType="text" thousandSeparator=" " suffix=" руб." />
+    </Price>
+    <Id>Item 39428531</Id>
+  </Content>);

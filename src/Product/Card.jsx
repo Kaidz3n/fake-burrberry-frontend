@@ -1,6 +1,7 @@
-import React from "react";
-import styled from "styled-components";
-import NumberFormat from "react-number-format";
+import React from 'react';
+import styled from 'styled-components';
+import PropTypes from 'prop-types';
+import NumberFormat from 'react-number-format';
 
 const Card = styled.a`
   display: block;
@@ -50,7 +51,7 @@ const Price = styled.h5`
   color: #999999;
 `;
 
-export default props => {
+export default function CardExport(props) {
   return (
     <Card>
       <Image alt="" src={props.image} />
@@ -61,13 +62,15 @@ export default props => {
         {props.fullname}
       </FullName>
       <Price>
-        <NumberFormat
-          value={props.price}
-          displayType="text"
-          thousandSeparator=" "
-          suffix=" руб."
-        />
+        <NumberFormat value={props.price} displayType="text" thousandSeparator=" " suffix=" руб." />
       </Price>
     </Card>
   );
+}
+
+CardExport.propTypes = {
+  image: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  fullname: PropTypes.string.isRequired,
+  price: PropTypes.number.isRequired,
 };

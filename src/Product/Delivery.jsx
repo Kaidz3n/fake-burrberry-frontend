@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
 const Content = styled.div`
   margin-right: -.5rem;
@@ -59,38 +59,27 @@ const Text = styled.p`
   color: #171717;
 `;
 
-export default () => {
-  return (
-    <Content>
-      <div className="col-md-7">
-        <Image
-          src="img/bitmap5.jpg"
-          srcset="img/bitmap5@2x.jpg 2x, img/bitmap5@3x.jpg 3x"
-          alt="Product image"
-        />
-      </div>
-      <div className="col-md-5 col-lg-4 col-lg-offset-1">
-        <Title>Delivery</Title>
-        <Subtitle>Free Next Day Delivery</Subtitle>
-        <Text>
-          Order before 7pm Monday to Thursday for delivery the next day
-        </Text>
+export default () =>
+  (<Content>
+    <div className="col-md-7">
+      <Image
+        src="img/bitmap5.jpg"
+        srcset="img/bitmap5@2x.jpg 2x, img/bitmap5@3x.jpg 3x"
+        alt="Product image"
+      />
+    </div>
+    <div className="col-md-5 col-lg-4 col-lg-offset-1">
+      <Title>Delivery</Title>
+      <Subtitle>Free Next Day Delivery</Subtitle>
+      <Text>Order before 7pm Monday to Thursday for delivery the next day</Text>
 
-        <Subtitle>Collect-in-Store</Subtitle>
-        <Text>
-          Order online today and pick up your items in store as early as
-          tomorrow
-        </Text>
+      <Subtitle>Collect-in-Store</Subtitle>
+      <Text>Order online today and pick up your items in store as early as tomorrow</Text>
 
-        <Subtitle>Free Returns</Subtitle>
-        <Text>Enjoy free returns on your order</Text>
+      <Subtitle>Free Returns</Subtitle>
+      <Text>Enjoy free returns on your order</Text>
 
-        <Subtitle>Free Gift Packaging</Subtitle>
-        <Text>
-          Discover our gift packaging, a gold lined box tied with a coloured
-          ribbon
-        </Text>
-      </div>
-    </Content>
-  );
-};
+      <Subtitle>Free Gift Packaging</Subtitle>
+      <Text>Discover our gift packaging, a gold lined box tied with a coloured ribbon</Text>
+    </div>
+  </Content>);

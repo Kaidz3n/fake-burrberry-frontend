@@ -34,8 +34,8 @@ const DesktopImage = styled.img`
   }
 `;
 
-export default () => (
-  <Content>
+export default () =>
+  (<Content>
     <Image
       src="img/bitmap.jpg"
       srcset="img/bitmap@2x.jpg 2x, img/bitmap@3x.jpg 3x"
@@ -57,5 +57,4 @@ export default () => (
       alt="product-image"
     />
     <DesktopImage src="img/desktop1.jpg" alt="product-image" />
-  </Content>
-);
+  </Content>);

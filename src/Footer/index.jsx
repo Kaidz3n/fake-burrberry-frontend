@@ -1,6 +1,6 @@
-import React from "react";
-import Navigation from "./Navigation";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
+import Navigation from './Navigation';
 
 const Footer = styled.footer`
   padding: 1rem .5rem 2rem .5rem;
@@ -65,16 +65,13 @@ const Link = styled.a`
   }
 `;
 
-export default () => {
-  return (
-    <Footer>
-      <div className="container">
-        <Navigation />
-        <Button>Shipping country: Russian Federation</Button>
-        <Button>Language: English</Button>
-        <Subtitle>Need help?</Subtitle>
-        <Link href="#">Find out more and contact us</Link>
-      </div>
-    </Footer>
-  );
-};
+export default () =>
+  (<Footer>
+    <div className="container">
+      <Navigation />
+      <Button>Shipping country: Russian Federation</Button>
+      <Button>Language: English</Button>
+      <Subtitle>Need help?</Subtitle>
+      <Link href="#">Find out more and contact us</Link>
+    </div>
+  </Footer>);

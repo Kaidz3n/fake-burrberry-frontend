@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
 const Content = styled.div`
   display: flex;
@@ -25,13 +25,11 @@ const TextButton = styled.button`
   color: #171717;
 `;
 
-export default () => {
-  return (
-    <Content>
-      <Size>
+export default () => (
+  <Content>
+    <Size>
         Size: <b>XL</b>
-      </Size>
-      <TextButton>Need size help?</TextButton>
-    </Content>
-  );
-};
+    </Size>
+    <TextButton>Need size help?</TextButton>
+  </Content>
+);
